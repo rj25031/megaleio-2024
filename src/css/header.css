@@ -1,0 +1,109 @@
+body {
+  /* font-family: Futura, Trebuchet MS, Arial, sans-serif; */
+  overflow-x: hidden;
+}
+
+#banner {
+  background-image: url("../images/opmg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.lb {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+.date {
+  margin-top: 500px;
+}
+
+.header {
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.schedule-bg {
+  background-image: url("../images/aot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.swing:hover {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  float: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.swing:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  top: -10px;
+  left: 50%;
+  z-index: 0;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+/* nail */
+.swing:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: -14px;
+  left: 54%;
+  z-index: 5;
+  border-radius: 50% 50%;
+  background: #000;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .date {
+    margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .date {
+    margin-top: 250px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
