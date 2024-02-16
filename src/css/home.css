@@ -1,0 +1,88 @@
+/* @font-face{
+    font-family:Slussen;
+    src:url(/fonts/Slussen-Compressed-Black.woff2) format("woff2");
+    font-display:swap;
+    font-weight:900;
+    font-stretch:compressed;
+}
+
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    color: #ff98a2;
+    font-family: Slussen;
+} */
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    height: 70vh;
+    width: 45%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card {
+    position: absolute;
+    width: 70%;
+    height: 60vh;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+
+.card-1 {
+    left: 0;
+    top: 0;
+}
+
+.card-2 {
+    left: 10px;
+    top: 10px;
+}
+
+.card-3 {
+    left: 20px;
+    top: 20px;
+}
+.card-4 {
+    left: 30px;
+    top: 30px;
+}
+.card-11 {
+    right: 0;
+    top: 0;
+}
+
+.card-22 {
+    right: 10px;
+    top: 10px;
+}
+
+.card-33 {
+    right: 20px;
+    top: 20px;
+}
+.card-44 {
+    right: 30px;
+    top: 30px;
+}
+
+/* .card h2 {
+    font-size: 80px;
+    font-weight: 900;
+    font-stretch: condensed;
+    color: #ff98a2;
+    text-transform: uppercase;
+} */
