@@ -35,16 +35,16 @@ const Header = () => {
   const nav_list =
     'mx-5 xl:mx-0 py-2 text-xl nabar  xs:text-md px-5 hover:bg-orange-600 opacity-0 text-white transtion-all duration-500 hover:cursor-pointer'
   return (
-    <div ref={container} className="fixed header w-full top-0 z-50">
+    <div ref={container} className="fixed  header w-full top-0 z-50">
       <div  className="flex  justify-between items-center px-8 lg:px-10 p-4 bg-transparent">
         <Link to="/">
           <div className="flex items-center">
             <img
-              className="w-16 xs:w-12"
+              className="w-16 xs:w-12 harry"
               src={MegaleioLogo}
               alt="Megaleio"
             />
-            <h1 className="mx-5 text-4xl sm:text-2xl xs:text-lg font-bold text-orange-600   ">
+            <h1 className="mx-5 text-4xl harry sm:text-2xl xs:text-lg font-bold text-orange-600   ">
               M E G A L E I O
             </h1>
           </div>
@@ -52,14 +52,14 @@ const Header = () => {
 
         <div className="xl:hidden">
           <ul ref={navl} className="flex ">
-            <Link to="/schedule">
+            <Link to="/">
               <li  className={nav_list}>Home</li>
             </Link>
             <Link to="/events">
               {' '}
               <li className={nav_list}>Events</li>
             </Link>
-            <Link to="/">
+            <Link to="/schedule">
               <li className={nav_list}>Schedule</li>
             </Link>
             {/* <Link to="/register">

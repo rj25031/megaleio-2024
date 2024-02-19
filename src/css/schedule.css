@@ -9,6 +9,9 @@
 .imgFont{
   font-family: img-text;
 }
+.harry{
+  font-family: harry;
+}
 .header {
   z-index: 30;
   background-color: #00000078;
@@ -36,8 +39,7 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  filter: blur(20px);
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: 5;
 }
 .event{
@@ -64,6 +66,75 @@
 }
 
 
-.current{
-  text-decoration: line-through;
+
+.relative{
+	position: relative;
 }
+
+.animated-paragraph {
+	position: relative;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 0;
+  }
+  
+  .animated-paragraph::before,
+  .animated-paragraph::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: white;
+	bottom: 0;
+	transition: width 0.2s ease;
+  }
+  
+  .animated-paragraph::before {
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .animated-paragraph::after {
+	right: 50%;
+	transform: translateX(50%);
+  }
+  
+  .animated-paragraph:hover::before,
+  .animated-paragraph:hover::after {
+	width: 100%;
+  }
+
+.current{
+	position: relative;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 0;
+}
+.current::before,
+.current::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: white; 
+	bottom: 0;
+	transition: width 0.2s ease;
+  }
+
+  .blur-background {
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(15px); /* Adjust the blur intensity as needed */
+	z-index: -1;
+	/* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);  */
+  }
+  
+  .timeline-container {
+	position: relative;
+	z-index: 40; /* Ensure it is below the timeline for the blur effect to work */
+  }
+  .centering{
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+  }
