@@ -49,20 +49,52 @@
   z-index: 20;
 }
 #c1 {
-  background-image: url("/src/images/bpp.jpg");
+  background-image: url("/public/Assets/evoltuion-images/1.jpeg");
 }
-
 #c2 {
-  background-image: url("/src/images/tech\ quiz.jpg");
+  background-image: url("/public/Assets/evoltuion-images/2.jpeg");
 }
 #c3 {
-  background-image: url("/src/images/code-relay.jpg");
+  background-image: url("/public/Assets/evoltuion-images/3.jpg");
 }
 #c4 {
-  background-image: url("/public/Assets/Harry\ Potter\ and\ the\ Sorcerer's\ Stone.jpeg");
+  background-image: url("/public/Assets/evoltuion-images/4.jpeg");
 }
 #c5 {
-  background-image: url("/public/Assets/Netflix\ adiciona\ mais\ três\ filmes\ de\ _Harry\ Potter_\ ao\ catálogo.jpeg");
+  background-image: url("/public/Assets/evoltuion-images/5.jpg");
+}
+#c6 {
+  background-image: url("/public/Assets/evoltuion-images/6.jpg");
+}
+#c7 {
+  background-image: url("/public/Assets/evoltuion-images/7.jpg");
+}
+#c8 {
+  background-image: url("/public/Assets/evoltuion-images/8.jpg");
+}
+#c9 {
+  background-image: url("/public/Assets/evoltuion-images/9.jpeg");
+}
+#c10 {
+  background-image: url("/public/Assets/evoltuion-images/10.jpeg");
+}
+#c11 {
+  background-image: url("/public/Assets/evoltuion-images/11.jpeg");
+}
+#c12 {
+  background-image: url("/public/Assets/evoltuion-images/12.jpg");
+}
+#c13 {
+  background-image: url("/public/Assets/evoltuion-images/13.jpg");
+}
+#c14 {
+  background-image: url("/public/Assets/evoltuion-images/14.jpg");
+}
+#c15 {
+  background-image: url("/public/Assets/evoltuion-images/15.jpeg");
+}
+#c16 {
+  background-image: url("/public/Assets/evoltuion-images/16.jpg");
 }
 
 
@@ -135,6 +167,6 @@
   .centering{
 	display: flex;
 	justify-content: center;
-	align-items: start;
+	align-items: flex-start;
 	flex-direction: column;
   }

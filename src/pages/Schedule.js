@@ -61,19 +61,31 @@ function Schedule() {
     }
   };
 
+  let ani;
   const container = useRef(null);
-
+  let handleHoverIn = () => {
+    ani = gsap.fromTo(".centering", { x: "-70%" }, { x: "0%" });
+    ani.play();
+  };
+  let handleHoverOut = () => {
+    ani.reverse();
+  };
   useGSAP(
     () => {
-      gsap.from('.centering', { x: "-100%", duration: 2 });
+      gsap.to(".centering", { x: "-70%", duration: 2 });
     },
     { scope: container }
   );
+
   return (
     <Layout>
       {
         <div className="timeline-container relative" ref={container}>
-          <div className="centering fixed p-3 rounded-r-3xl text-white font-bold top-32 z-50 blur-background">
+          <div
+            className="centering fixed p-3 rounded-r-3xl text-white font-bold top-32 z-50 blur-background"
+            onMouseEnter={handleHoverIn}
+            onMouseLeave={handleHoverOut}
+          >
             <p className="text-3xl">DAY 1</p>
             <ul className="centering">
               {/* Loop through scheduleData to render the timeline */}

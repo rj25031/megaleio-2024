@@ -1,16 +1,12 @@
-import { useEffect, useState ,  useRef } from 'react'
-import MegaleioLogo from '../../images/anime meg.png'
+import {  useState ,  useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import gsap from 'gsap';
-import ScrollToPlugin from 'gsap/ScrollToPlugin';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useGSAP } from "@gsap/react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  // gsap.registerPlugin(ScrollToPlugin,ScrollTrigger)
   const buttonClickHandler = () => {
     if (!isOpen) {
       setIsOpen(true)
@@ -20,8 +16,8 @@ const Header = () => {
   }
 
 
-  const container = useRef();
-  const navl = useRef() ;
+  const container = useRef(null);
+  const navl = useRef(null) ;
   useGSAP(() => {
     // gsap code here...
     gsap.to(".nabar", {opacity: 1 , duration:1 ,stagger:.5 }); 
@@ -33,19 +29,19 @@ const Header = () => {
 
 
   const nav_list =
-    'mx-5 xl:mx-0 py-2 text-xl nabar  xs:text-md px-5 hover:bg-orange-600 opacity-0 text-white transtion-all duration-500 hover:cursor-pointer'
+    'mx-5 xl:mx-0 py-2 text-xl nabar  xs:text-md px-5 hover:bg-orange-600 opacity-0 text-white transition-all duration-500 hover:cursor-pointer'
   return (
     <div ref={container} className="fixed  header w-full top-0 z-50">
-      <div  className="flex  justify-between items-center px-8 lg:px-10 p-4 bg-transparent">
+      <div  className="flex  justify-between items-center px-8 lg:px-10 p-2 bg-transparent">
         <Link to="/">
           <div className="flex items-center">
             <img
               className="w-16 xs:w-12 harry"
-              src={MegaleioLogo}
+              src="megaleio png.png"
               alt="Megaleio"
             />
-            <h1 className="mx-5 text-4xl harry sm:text-2xl xs:text-lg font-bold text-orange-600   ">
-              M E G A L E I O
+            <h1 className="mx-5 text-4xl harry sm:text-2xl xs:text-lg font-bold text-orange-600  tracking-widest ">
+              MEGALEIO
             </h1>
           </div>
         </Link>
