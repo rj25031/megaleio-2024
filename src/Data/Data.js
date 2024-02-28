@@ -1,14 +1,14 @@
 import ccc from "../images/competative_coding_contest.png";
-import roboWar from "../images/robo_war.png";
+import roboWar from "../images/robo-war.jpg";
 import roboSoccer from "../images/robo_soccer.png";
 import megaHack from "../images/competative_coding_contest2.png";
 import blindC from "../images/blind_c.png";
-import bpp from "../images/bussiness_plan_presenation.png";
+import bpp from "../images/bpp.jpg";
 import valorant from "../images/valorant.jpg";
 import bridgeIt from "../images/bridge_it.png";
 import line from "../images/line_follower.png";
 import neon from "../images/neon_cricket.jpeg";
-import quiz from "../images/anime_quiz.jpg";
+import quiz from "../images/tech-quiz.jpg";
 import omic from "../images/open_mic1.jpg";
 
 export const scheduleData = [

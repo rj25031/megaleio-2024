@@ -87,8 +87,8 @@ const EventPage = () => {
               <div className="topic">{item.time}</div>
               <div className="des">{item.desc}</div>
               <div className="buttons">
-                <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
+                <button>RULE BOOK</button>
+                <button>REGISTER</button>
               </div>
             </div>
           </div>
