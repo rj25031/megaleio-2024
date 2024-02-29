@@ -2,6 +2,25 @@ import React, { useState, useEffect } from "react";
 import Layout from '../Components/Layouts/Layout'
 import "../css/event.css";
 import { event_list } from "../Data/Data";
+import React, {useState,useEffect } from "react";
+import '../css/about.css';
+import Layout from '../Components/Layouts/Layout';
+import "../css/event.css";
+import img from "../images/1.png";
+import ccc from "../images/competative_coding_contest.png";
+import roboWar from "../images/robo_war.png";
+import roboSoccer from "../images/robo_soccer.png";
+import megaHack from "../images/competative_coding_contest2.png";
+import blindC from "../images/blind_c.png";
+import bpp from "../images/bussiness_plan_presenation.png";
+import valorant from "../images/valorant.jpg";
+import bridgeIt from "../images/bridge_it.png";
+import line from "../images/line_follower.png";
+import neon from "../images/neon_cricket.jpeg";
+import quiz from "../images/anime_quiz.jpg";
+import omic from "../images/open_mic1.jpg";
+import opmd from "../images/opmd.jpg";
+import laser_tag from "../images/laser_tag.jpg";
 
 
 const EventPage = () => {
