@@ -1,5 +1,5 @@
-.container{
-    /* background-image: url(/src/images/Default_harry_potter_style_open_mic_event_with_an_audience_in_0.jpg); */
+.main-section{
+    background-image: url(/public/Assets/bg.jpg);
 }
 .main{
     position: relative;
@@ -9,10 +9,10 @@
 
 .img-cards {
     position: absolute;
-    /* top:40px; */
-    /* left: 2%; */
-    height: 70vh;
-    width: 100%;
+    top:10px;
+    left: 2%; 
+    width: 60%;
+    /* height: 80%; */
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -20,10 +20,10 @@
 }
 .content-cards {
     position: absolute;
-    /* top: 13rem;
-    left: 50%; */
+    top: 13rem;
+    left: 60%;
+    width: 40%;
     height: 70vh;
-    width: 100%;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -32,17 +32,16 @@
 .img-card {
     position: absolute;
     width: 100%;
-    /* height: 60vh; */
+    /* height: 70%; */
     background: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 7px;
-    /* padding: 50px; */
 }
 .content-card{
     position: absolute;
-    width: 60%;
+    width: 80%;
     height: 60vh;
     background-color: rgba(255, 255, 255, .17);  
     backdrop-filter: blur(15px);
@@ -120,7 +119,7 @@
     top: 60px;
 }
 
-.con h2 {
+.card h2 {
     font-size: 80px;
     font-weight: 900;
     font-stretch: condensed;
@@ -132,10 +131,19 @@
     width: 100%;
     border-radius: 7px;
 }
+
+.logo-img{
+    width: 70%;
+    z-index: 1;
+}
+
+
 .mid-cloud{
     position: absolute;
-    z-index: 2;
+    top: 0%;
     width: 100%;
+    height: 80%;
+    z-index: 18;
 }
 
 .corner-cloud-left{
@@ -144,38 +152,68 @@
     left: -6%;
     width: 95%;
     transform: rotate(180deg);
-    z-index: 3;
+    z-index: 20;
 }
 .corner-cloud-right{
     position: absolute;
     bottom: -1.5%;
     right: -6%;
     width: 95%;
+    z-index: 20;
+}
+.round-cloud{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 3;
 }
 
-/* .main-section{
-    
-    height: 800px;
-} */
-
-.collage{
+.mid-cloud-2nd{
     position: absolute;
-    left: 15%;
-    top: 40%;
-    font-size: 5rem;
-    font-weight: 900;
-    z-index: 1;
-}
-
-.logo-img{
-    position: absolute;
-    top: 0%;
-    left: 25%;
-    width: 50%;
+    top: -40%;
+    left: -50%;
+    max-width: 120rem;
     z-index: 0;
 }
+.mid-cloud-1st{
+    position: absolute;
+    top: -23%;
+    width: 100%;
+    z-index: 3;
+}
+.darkest{
+    position: absolute;
+    top: -23%;
+    left: -5%;
+    width: 100%;
+    z-index: 2;
+}
 .light{
-    /* position: absolute; */
-    z-index: 100;
+    position: absolute;
+    top: -13%;
+    z-index: 0;
+}
+.collage{
+    top: 30%;
+    z-index: 9;
+}
+div h1.right-0{
+    right: -10%;
+}
+
+.poster{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 2rem;
+}
+.poster-img{
+    width: 50%;
+}
+.content{
+    width: 50%;
+    padding: 3rem;
+    text-align: justify;
 }

@@ -1,0 +1,60 @@
+.sponsors-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	color: black;
+  }
+  
+  .sponsors-heading {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 30px;
+  }
+  
+  .sponsors-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .sponsors-item {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	padding: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	flex: 1;
+	text-align: center;
+	transition: all .5s ease-in-out;
+  }
+
+  .sponsors-item:hover{
+	background-color: #f2aa4c;
+	color: white;
+	margin: 20px;
+  }
+  
+  .sponsor-image {
+	width: 100%;
+	max-width: 200px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+  }
+  
+  .sponsor-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+  }
+  .sponsors-sub-heading {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-top: 30px;
+  }

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "../Components/Layouts/Layout";
 import "../css/about.css";
+import { about_data } from "../Data/Data";
 
 function About() {
   useEffect(() => {
@@ -32,66 +33,55 @@ function About() {
     window.scrollTo(0, 1);
   }, []);
 
-  let ccccc = [
-    { content: "right", media: "left" },
-    { content: "left", media: "right" },
-    { content: "right", media: "left" },
-    { content: "right", media: "left" },
-    { content: "left", media: "right" },
-    { content: "right", media: "left" }, 
-  ];
   return (
     <Layout>
       <div className="main-body">
-      <div className="container-about">
-        <section className="gallery-about">
-          {ccccc.map((data, index) => [
-            <div key={index} className="frame">
-              <div className={`frame__content text-${data.content}`}>
-                <h3 className="text-center">Megalieo 2024</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  odit ad autem quam fuga qui quidem cumque illum iste.
-                  Distinctio, totam praesentium ab soluta obcaecati magni
-                  numquam aspernatur quo veritatis!
-                </p>
-              </div>
-            </div>, 
-            <div key={index} className="frame">
+        <div className="container-about">
+          <section className="gallery-about">
+            {about_data.map((data, index) => [
+              <div key={index} className="frame">
+                <div className={`frame__content text-${data.content}`}>
+                  <h3 className="text-center">{data.name}</h3>
+                  <h4 className="text-center">{data.designation}</h4>
+                  <p>{data.description}</p>
+                </div>
+              </div>,
+              <div key={index} className="frame">
+                <div className="frame__content">
+                  <div
+                    className={`frame-media frame-media_${data.media}`}
+                    style={{
+                      backgroundImage: `url("${data.img}")`,
+                    }}
+                  ></div>
+                </div>
+              </div>,
+              <div key={index} className="frame"></div>,
+            ])}
+
+            <div className="frame">
               <div className="frame__content">
-                <div
-                  className={`frame-media frame-media_${data.media}`}
-                  style={{
-                    backgroundImage: "url('/Assets/compressed_example.webp')",
-                  }}
-                ></div>
+                <img
+                  className="frame-media"
+                  src="Assets/megaleio2020.jpg"
+                  // autoplay
+                  // loop
+                  // muted
+                  alt="photodd"
+                ></img>
               </div>
-            </div>,
-            <div key={index} className="frame"></div>,
-          ])}
-         
-
-          <div className="frame">
-            <div className="frame__content">
-              <img
-                className="frame-media"
-                src="/Assets/compressed_example.webp"
-                // autoplay
-                // loop
-                // muted
-                alt="photodd"
-              ></img>
             </div>
-          </div>
 
-          <div className="frame"></div>
-          <div className="frame"></div>
+            <div className="frame"></div>
+            <div className="frame"></div>
 
-          <div className="frame">
-            <div className="frame__content"><h3>Megaleio 2024</h3></div>
-          </div>
-        </section>
-      </div>
+            <div className="frame">
+              <div className="frame__content">
+                <h3>Megaleio 2024</h3>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </Layout>
   );

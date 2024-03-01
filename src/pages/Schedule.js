@@ -87,7 +87,7 @@ function Schedule() {
       {
         <div className="timeline-container relative" ref={container}>
           <div
-            className="centering fixed p-3 rounded-r-3xl text-white font-bold top-32 z-50 blur-background"
+            className="centering fixed p-3 pr-12 rounded-r-3xl text-white font-bold top-32 z-50 blur-background"
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
           >
@@ -151,6 +151,9 @@ function Schedule() {
                   )
               )}
             </ul>
+            <div className=" relative">
+            <h1 className="sch">SCHEDULE</h1>
+          </div>
           </div>
         </div>
       }

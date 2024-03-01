@@ -9,7 +9,7 @@
 }
 .main-body{
 	background-color: black;
-	color: yellow;
+	color: orange;
 	font-size: calc(var(--index) * .8);
 	/* font-family: harry, sans-serif; */
 	line-height: 1.75;
@@ -102,7 +102,7 @@ video.frame-media_right {
 }
 
 .frame h3 {
-	font-size: calc(var(--index) * 3);
+	font-size: calc(var(--index) * 2);
 	font-weight: 600;
 	text-transform: uppercase;
 	line-height: 1;

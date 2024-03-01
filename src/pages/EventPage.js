@@ -3,7 +3,6 @@ import Layout from '../Components/Layouts/Layout'
 import "../css/event.css";
 import { event_list } from "../Data/Data";
 
-
 const EventPage = () => {
  
   const [currentIndex, setCurrentIndex] = useState(0);
