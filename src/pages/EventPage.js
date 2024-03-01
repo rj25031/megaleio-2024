@@ -87,8 +87,8 @@ const EventPage = () => {
               <div className="topic">{item.time}</div>
               <div className="des">{item.desc}</div>
               <div className="buttons">
-                <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
+                <button>READ MORE</button>
+                <button>REGISTER</button>
               </div>
             </div>
           </div>
@@ -115,10 +115,12 @@ const EventPage = () => {
 
       <div className="arrows">
         <button id="prev" onClick={() => showSlider("prev")}>
-          &lt;
+          {/* &lt; */}
+          <img className="prev-img" src="Assets\Asset 1.png" alt="" />
         </button>
         <button id="next" onClick={() => showSlider("next")}>
-          &gt;
+          {/* &gt; */}
+          <img className="next-img" src="Assets\Asset 1.png" alt="" />
         </button>
       </div>
 

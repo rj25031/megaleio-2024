@@ -2,20 +2,27 @@
   font-family: harry;
   src: url("/public/Font/HARRYP__.TTF");
 }
-@font-face{
+@font-face {
   font-family: img-text;
   src: url("/public/Font/harry_potter_and_the_dingbat_font.TTF");
 }
-.imgFont{
+.imgFont {
   font-family: img-text;
 }
-.harry{
+.harry {
   font-family: harry;
 }
 .header {
-  z-index: 30;
-  background-color: #00000078;
-} 
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
 .card {
   position: sticky;
   top: 0;
@@ -26,7 +33,7 @@
   align-items: center;
   font-family: harry;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-attachment: fixed;
   z-index: 10;
   color: #fff010;
@@ -42,131 +49,152 @@
   opacity: 0.7;
   z-index: 5;
 }
-.event{
+.event {
   position: absolute;
   top: 30%;
   left: 20%;
-  z-index: 20;
+  z-index: 15;
 }
 #c1 {
-  background-image: url("/public/Assets/evoltuion-images/1.jpeg");
+  background-image: url("/src/images/evoltuion-images/1.jpeg");
 }
 #c2 {
-  background-image: url("/public/Assets/evoltuion-images/2.jpeg");
+  background-image: url("/src/images/evoltuion-images/2.jpeg");
 }
 #c3 {
-  background-image: url("/public/Assets/evoltuion-images/3.jpg");
+  background-image: url("/src/images/evoltuion-images/3.jpg");
 }
 #c4 {
-  background-image: url("/public/Assets/evoltuion-images/4.jpeg");
+  background-image: url("/src/images/evoltuion-images/4.jpeg");
 }
 #c5 {
-  background-image: url("/public/Assets/evoltuion-images/5.jpg");
+  background-image: url("/src/images/evoltuion-images/5.jpg");
 }
 #c6 {
-  background-image: url("/public/Assets/evoltuion-images/6.jpg");
+  background-image: url("/src/images/evoltuion-images/6.jpg");
 }
 #c7 {
-  background-image: url("/public/Assets/evoltuion-images/7.jpg");
+  background-image: url("/src/images/evoltuion-images/7.jpg");
 }
 #c8 {
-  background-image: url("/public/Assets/evoltuion-images/8.jpg");
+  background-image: url("/src/images/evoltuion-images/8.jpg");
 }
 #c9 {
-  background-image: url("/public/Assets/evoltuion-images/9.jpeg");
+  background-image: url("/src/images/evoltuion-images/9.jpeg");
 }
 #c10 {
-  background-image: url("/public/Assets/evoltuion-images/10.jpeg");
+  background-image: url("/src/images/evoltuion-images/10.jpeg");
 }
 #c11 {
-  background-image: url("/public/Assets/evoltuion-images/11.jpeg");
+  background-image: url("/src/images/evoltuion-images/11.jpeg");
 }
 #c12 {
-  background-image: url("/public/Assets/evoltuion-images/12.jpg");
+  background-image: url("/src/images/evoltuion-images/12.jpg");
 }
 #c13 {
-  background-image: url("/public/Assets/evoltuion-images/13.jpg");
+  background-image: url("/src/images/evoltuion-images/13.jpg");
 }
 #c14 {
-  background-image: url("/public/Assets/evoltuion-images/14.jpg");
+  background-image: url("/src/images/evoltuion-images/14.jpg");
 }
 #c15 {
-  background-image: url("/public/Assets/evoltuion-images/15.jpeg");
-}
-#c16 {
-  background-image: url("/public/Assets/evoltuion-images/16.jpg");
+  background-image: url("/src/images/evoltuion-images/15.jpg");
 }
 
-
-
-.relative{
-	position: relative;
+.relative {
+  position: relative;
 }
 
 .animated-paragraph {
-	position: relative;
-	font-size: 14px;
-	line-height: 1.5;
-	padding: 0;
-  }
-  
-  .animated-paragraph::before,
-  .animated-paragraph::after {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 2px;
-	background-color: white;
-	bottom: 0;
-	transition: width 0.2s ease;
-  }
-  
-  .animated-paragraph::before {
-	left: 50%;
-	transform: translateX(-50%);
-  }
-  
-  .animated-paragraph::after {
-	right: 50%;
-	transform: translateX(50%);
-  }
-  
-  .animated-paragraph:hover::before,
-  .animated-paragraph:hover::after {
-	width: 100%;
-  }
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0;
+}
 
-.current{
-	position: relative;
-	font-size: 14px;
-	line-height: 1.5;
-	padding: 0;
+.animated-paragraph::before,
+.animated-paragraph::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  transition: width 0.2s ease;
+}
+
+.animated-paragraph::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.animated-paragraph::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.animated-paragraph:hover::before,
+.animated-paragraph:hover::after {
+  width: 100%;
+}
+
+.current {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0;
 }
 .current::before,
 .current::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background-color: white; 
-	bottom: 0;
-	transition: width 0.2s ease;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  transition: width 0.2s ease;
+}
+
+.blur-background {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px); /* Adjust the blur intensity as needed */
+  z-index: -1;
+  /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);  */
+}
+
+.timeline-container {
+  position: relative;
+  z-index: 20; /* Ensure it is below the timeline for the blur effect to work */
+}
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@media screen and (width <= 768px) {
+  .event{
+    top:35%;
+  }
+  .card{
+    background-position: 1%;
+    background-size: 100% 40%;
+    background-color: aqua;
+  }
+  .animated-paragraph {
+    line-height: 1;
+  }
+  .animated-paragraph::after,
+  .animated-paragraph::before {
+    height: 1.5px;
+  }
+  .current {
+    line-height: 1;
+  }
+  .current::after,
+  .current::before {
+    bottom: -3.5px;
   }
 
-  .blur-background {
-	background-color: rgba(255, 255, 255, 0.3);
-	backdrop-filter: blur(15px); /* Adjust the blur intensity as needed */
-	z-index: -1;
-	/* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);  */
-  }
-  
-  .timeline-container {
-	position: relative;
-	z-index: 40; /* Ensure it is below the timeline for the blur effect to work */
-  }
-  .centering{
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	flex-direction: column;
-  }
+}

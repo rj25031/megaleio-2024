@@ -6,6 +6,9 @@ import { useGSAP } from "@gsap/react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  
+    const container = useRef(null);
+    const navl = useRef(null) ;
 
   const buttonClickHandler = () => {
     if (!isOpen) {
@@ -15,23 +18,22 @@ const Header = () => {
     }
   }
 
-
-  const container = useRef(null);
-  const navl = useRef(null) ;
   useGSAP(() => {
     // gsap code here...
-    gsap.to(".nabar", {opacity: 1 , duration:1 ,stagger:.5 }); 
     gsap.from(container.current,{y:'-100%' , opacity: 0 , duration:1})
+    gsap.to(".nabar", {opacity: 1 , duration:1 ,stagger:.5 }); 
   
   }, { scope: container });
 
 
 
 
+  const nav_list_mob =
+    'mx-5 xl:mx-0 py-2 text-xl nabar  xs:text-md px-5 hover:bg-orange-600 opacity-1 text-white transition-all duration-500 hover:cursor-pointer'
   const nav_list =
     'mx-5 xl:mx-0 py-2 text-xl nabar  xs:text-md px-5 hover:bg-orange-600 opacity-0 text-white transition-all duration-500 hover:cursor-pointer'
   return (
-    <div ref={container} className="fixed  header w-full top-0 z-50">
+    <div ref={container} className="fixed header w-full top-0 ">
       <div  className="flex  justify-between items-center px-8 lg:px-10 p-2 bg-transparent">
         <Link to="/">
           <div className="flex items-center">
@@ -68,7 +70,7 @@ const Header = () => {
             </Link>
           </ul>
         </div>
-        <div className="text-orange-600 text-3xl xs:text-xl transtion-all duration-500 hover:cursor-pointer hidden xl:block">
+        <div className="text-orange-600 text-3xl xs:text-xl transition-all duration-500 hover:cursor-pointer hidden xl:block">
           {!isOpen && (
             <div onClick={buttonClickHandler}>
               <AiOutlineMenu />
@@ -82,17 +84,17 @@ const Header = () => {
         </div>
       </div>
       {isOpen && (
-        <div className=" bg-black lg:px-0 transtion-all duration-500 hover:cursor-pointer">
+        <div className=" bg-black lg:px-0 transition-all duration-500 hover:cursor-pointer ">
           <ul>
             <Link to="/">
-              <li className={nav_list}>Home</li>
+              <li className={nav_list_mob}>Home</li>
             </Link>
             <Link to="/events">
               {' '}
-              <li className={nav_list}>Events</li>
+              <li className={nav_list_mob}>Events</li>
             </Link>
             <Link to="/schedule">
-              <li className={nav_list}>Schedule</li>
+              <li className={nav_list_mob}>Schedule</li>
             </Link>
             {/* <Link to="/register">
               {' '}
@@ -100,7 +102,7 @@ const Header = () => {
             </Link> */}
             <Link to="/about">
               {' '}
-              <li className={nav_list}>About us</li>
+              <li className={nav_list_mob}>About us</li>
             </Link>
           </ul>
         </div>

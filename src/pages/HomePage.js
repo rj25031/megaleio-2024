@@ -5,8 +5,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import meg from "../images/megaleio2020.jpg";
-import rw from "../images/robo war20.jpg";
-import rs from "../images/robo soccer.jpg"
 import { home_data } from "../Data/Data"
 function HomePage() {
   const container = useRef(null);
@@ -20,7 +18,7 @@ function HomePage() {
           start: "left+=30 left", // Adjusted syntax
           end: "+=2500",
           pin: true,
-          // pinSpacer: true,
+          pinSpacer: false,
           scrub: 1,
           markers:true,
         },
@@ -149,7 +147,7 @@ function HomePage() {
         scrollTrigger: {
           trigger: cloudContainer.current,
           pin: true,
-          pinSpacer: true,
+          pinSpacer: false,
           start: "left left", // Adjusted syntax
           end: "+=2500",
           scrub: 1,
@@ -170,14 +168,14 @@ function HomePage() {
       },'a');
       timeline.to(".mid-cloud", {
         scale:3,
-        opacity:0,
+        // opacity:0,
         duration:2,
         stagger:1,
       },'a');
       timeline.to(".collage", {
         scale:2,
         opacity:0,
-        duration:5,
+        delay:2,
         stagger:1,
       },'a');
       
@@ -187,9 +185,10 @@ function HomePage() {
     <Layout>
       <section ref={cloudContainer} className="main-section w-screen h-screen bg-black">
         <img className="logo-img" src="megaleio png.png" alt="megalio" />
-          {/* <img className="mid-cloud" src="Assets\clouds\cloud4.png" alt="clouds" /> */}
+          {/* <img className="mid-cloud" src="Assets\clouds\dark-cloud.png" alt="clouds" /> */}
           <h1 className="collage">st john collage and <br /> management Presents</h1>
         <div className="clouds">
+          <img className="light" src="Assets\clouds\lightining.gif" alt="light" />
           <img className="mid-cloud" src="Assets\clouds\cloud4.png" alt="clouds" />
           <img className="corner-cloud-right" src="Assets\clouds\cloud2.png" alt="clouds" />
           <img className="corner-cloud-left" src="Assets\clouds\cloud2.png" alt="clouds" />
@@ -200,8 +199,8 @@ function HomePage() {
           <h1>hello</h1>
         </div>
       </section>
-{/* 
-      <section className="container" ref={container}>
+
+      {/* <section className="container" ref={container}>
         <div className="main">
           <div className="img-cards">
            {home_data.map((data,index)=>{

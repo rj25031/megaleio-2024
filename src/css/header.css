@@ -26,6 +26,7 @@ body {
   width: 100%;
   background: transparent;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
 }
 
 .scrollbar-hide::-webkit-scrollbar {

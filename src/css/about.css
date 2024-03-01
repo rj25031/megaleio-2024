@@ -2,14 +2,14 @@
 :root {
 	--index: calc(1vw + 1vh);
 	--gutter: 30px;
-	--side-small: 26;
+	--side-small: 40;
 	--side-big: 36;
 	--depth: 4100px;
 	--transition: .75s cubic-bezier(0.075, .5, 0, 1);
 }
 .main-body{
 	background-color: black;
-	color: #eeea0b;
+	color: yellow;
 	font-size: calc(var(--index) * .8);
 	/* font-family: harry, sans-serif; */
 	line-height: 1.75;
@@ -52,6 +52,7 @@
 	height: calc(var(--index) * var(--side-big));
 	background-position: center;
 	background-size: cover;
+	border-radius: 7px;
 }
 
 .frame-media_left {
@@ -65,7 +66,7 @@
 .frame_bg {
 	background-color: rgb(0 0 0 / .87);
 }
-
+/* 
 video.frame-media {
 	width: calc(var(--index) * var(--side-big));
 	height: calc(var(--index) * var(--side-small));
@@ -77,16 +78,27 @@ video.frame-media_left {
 
 video.frame-media_right {
 	left: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+} */
+
+.text-right  {
+	position: relative;
+	left: 20vw;
+	background-color: rgb(255 255 255 / .15);
+	backdrop-filter: blur(10px);
+	padding: 30px 20px;
+	border-radius: 7px;
+	height: 72%;
+	
 }
 
-.text-right > * {
+.text-left  {
 	position: relative;
-	left: 18vw;
-}
-
-.text-left > * {
-	position: relative;
-	right: 18vw;
+	right: 20vw;
+	background-color: rgb(255 255 255 / .15);
+	backdrop-filter: blur(10px);
+	padding: 30px 20px;
+	border-radius: 7px;
+	height: 75%;
 }
 
 .frame h3 {
@@ -100,4 +112,45 @@ video.frame-media_right {
 	max-width: 30vw;
 	margin-top: 5vh;
 }
+ 
 
+@media (width <=768px) {
+	:root{
+		--index: calc(0.5vw + 0.5vh);
+		--gutter: 30px;
+		--side-small: 40;
+		--side-big: 70;
+	}
+	.container-about{
+		top: calc(var(--index) * var(--side-big));
+		height: calc(var(--index) * var(--side-big));
+	}
+	.frame h3 {
+		font-size: calc(var(--index) * 3);
+		font-weight: 600;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+	
+	.frame p {
+		font-size: calc(var(--index) * 1.5);
+		max-width: 30vw;
+		margin-top: 2.5vh;
+	}
+	.frame{
+		bottom: 30%;
+	}
+	.text-right{
+	bottom: 35%;
+
+	}
+	.text-left{
+	bottom: 35%;	
+	}
+	.frame-media_left{
+		bottom: 20rem;
+	}
+	.frame-media_right{
+		bottom: 20rem;
+	}
+}

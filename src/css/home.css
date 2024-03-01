@@ -175,3 +175,7 @@
     width: 50%;
     z-index: 0;
 }
+.light{
+    /* position: absolute; */
+    z-index: 100;
+}

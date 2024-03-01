@@ -59,17 +59,22 @@ function Schedule() {
         top: element.offsetTop, // Adjust the scroll position as needed
       });
     }
+    // AOS.refresh();
   };
 
-  let ani;
+  const aniRef = useRef(null);
+
+  const handleHoverIn = () => {
+    aniRef.current = gsap.fromTo(".centering", { x: "-70%" }, { x: "0%" });
+    aniRef.current.play();
+  };
+
+  const handleHoverOut = () => {
+    if (aniRef.current) {
+      aniRef.current.reverse();
+    }
+  };
   const container = useRef(null);
-  let handleHoverIn = () => {
-    ani = gsap.fromTo(".centering", { x: "-70%" }, { x: "0%" });
-    ani.play();
-  };
-  let handleHoverOut = () => {
-    ani.reverse();
-  };
   useGSAP(
     () => {
       gsap.to(".centering", { x: "-70%", duration: 2 });
@@ -86,7 +91,7 @@ function Schedule() {
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
           >
-            <p className="text-3xl">DAY 1</p>
+            <p className="text-3xl sm:text-xl">DAY 1</p>
             <ul className="centering">
               {/* Loop through scheduleData to render the timeline */}
               {scheduleData.map(
@@ -97,8 +102,8 @@ function Schedule() {
                       onClick={() => handleListItemClick(index)}
                       className={
                         current === index + 1
-                          ? "m-0 cursor-pointer h-6 animated-paragraph current"
-                          : "m-0 cursor-pointer h-6 animated-paragraph "
+                          ? "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph current"
+                          : "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph "
                       }
                     >
                       <p className="mt-1">{tl.time}</p>
@@ -106,7 +111,7 @@ function Schedule() {
                   )
               )}
             </ul>
-            <p className="text-3xl">DAY 2</p>
+            <p className="text-3xl sm:text-xl">DAY 2</p>
             <ul className="centering">
               {/* Loop through scheduleData to render the timeline */}
               {scheduleData.map(
@@ -117,8 +122,8 @@ function Schedule() {
                       onClick={() => handleListItemClick(index)}
                       className={
                         current === index + 1
-                          ? "m-0 cursor-pointer h-6 animated-paragraph current"
-                          : "m-0 cursor-pointer h-6 animated-paragraph "
+                          ? "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph current"
+                          : "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph "
                       }
                     >
                       <p className="mt-1">{tl.time}</p>
@@ -126,7 +131,7 @@ function Schedule() {
                   )
               )}
             </ul>
-            <p className="text-3xl">DAY 3</p>
+            <p className="text-3xl sm:text-xl">DAY 3</p>
             <ul className="centering">
               {/* Loop through scheduleData to render the timeline */}
               {scheduleData.map(
@@ -137,8 +142,8 @@ function Schedule() {
                       onClick={() => handleListItemClick(index)}
                       className={
                         current === index + 1
-                          ? "m-0 cursor-pointer h-6 animated-paragraph current"
-                          : "m-0 cursor-pointer h-6 animated-paragraph "
+                          ? "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph current"
+                          : "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph "
                       }
                     >
                       <p className="mt-1">{tl.time}</p>
@@ -159,16 +164,16 @@ function Schedule() {
               ref={(el) => (scheduleDataRef.current[index] = el)}
             >
               <div className="inauguration event">
-                <p data-aos="fade-up" className="text-5xl mb-3">
+                <p data-aos="fade-up" className="text-5xl sm:text-3xl mb-3">
                   DAY : {tl.day}
                 </p>
-                <h1 data-aos="fade-up" className="text-9xl mb-3">
+                <h1 data-aos="fade-up" className="text-9xl sm:text-5xl mb-3">
                   {tl.title.toUpperCase()}
                 </h1>
-                <h2 data-aos="fade-up" className="text-4xl mb-3">
+                <h2 data-aos="fade-up" className="text-4xl sm:text-3xl mb-3">
                   {tl.time}
                 </h2>
-                <h3 data-aos="fade-up" className="text-4xl mb-3">
+                <h3 data-aos="fade-up" className="text-4xl sm:text-3xl mb-3">
                   {tl.place.toUpperCase()}
                 </h3>
               </div>

@@ -38,7 +38,7 @@ function About() {
     { content: "right", media: "left" },
     { content: "right", media: "left" },
     { content: "left", media: "right" },
-    { content: "right", media: "left" },
+    { content: "right", media: "left" }, 
   ];
   return (
     <Layout>
@@ -56,7 +56,7 @@ function About() {
                   numquam aspernatur quo veritatis!
                 </p>
               </div>
-            </div>,
+            </div>, 
             <div key={index} className="frame">
               <div className="frame__content">
                 <div
@@ -79,6 +79,7 @@ function About() {
                 // autoplay
                 // loop
                 // muted
+                alt="photodd"
               ></img>
             </div>
           </div>

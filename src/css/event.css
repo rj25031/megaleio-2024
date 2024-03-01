@@ -134,20 +134,24 @@ header a{
 /* arrows */
 .arrows{
     position: absolute;
-    top: 80%;
-    right: 52%;
+    top: 73%;
+    right: 62%;
     z-index: 100;
     width: 300px;
     max-width: 30%;
     display: flex;
-    gap: 10px;
+    gap: 40px;
     align-items: center;
 }
 .arrows button{
-    width: 40px;
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
     border-radius: 50%;
-    background-color: #eee4;
+    /* background-color: #eee4; */
     border: none;
     color: #fff;
     font-family: monospace;
@@ -315,4 +319,12 @@ header a{
     .carousel .list .item .content .title{
         font-size: 30px;
     }
+}
+
+.prev-img{
+    transform: rotate(180deg);
+    max-width: 60px;
+}
+.next-img{
+    max-width: 60px;
 }
