@@ -228,11 +228,13 @@ div h1.right-0{
 	}
 	
 	.corner-cloud-left{
-		width: 100vw;
+		width: 50rem;
+        max-width: 100rem;
 		height: 70vh;
 	}
 	.corner-cloud-right{
-		width: 100vw;
+        width: 50rem;
+        max-width: 100rem;
 		height: 70vh;
 	}
 	.logo-img{
@@ -240,11 +242,23 @@ div h1.right-0{
 		z-index: 1;
 	}
 	.darkest{
-		width: 100vw;
-		height: 50vh;
-		top: 25vh;
-		left: 0;
+		width: 100rem;
+        max-width: 120rem;
+		top: 15vh;
+		left: -70vh;
 	}
+    .mid-cloud-2nd{
+        top: -2%;
+        left: -140vw;
+        width: 80rem;
+        max-width: 100rem;
+    }
+    .light{
+        top: 0;
+        left: -10rem;
+        width: 50rem;
+        max-width: 100rem;
+    }
 	.poster{
 		flex-direction: column;
 		justify-content: center;
