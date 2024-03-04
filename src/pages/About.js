@@ -62,8 +62,8 @@ function About() {
             <div className="frame">
               <div className="frame__content">
                 <img
-                  className="frame-media"
-                  src="Assets/megaleio2020.jpg"
+                  className="frame-media frame-last"
+                  src="Assets/megaleio2023.jpg"
                   // autoplay
                   // loop
                   // muted

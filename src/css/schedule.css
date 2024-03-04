@@ -83,13 +83,13 @@
   background-image: url("/src/images/evoltuion-images/9.jpeg");
 }
 #c10 {
-  background-image: url("/src/images/evoltuion-images/10.jpeg");
+  background-image: url("/src/images/evoltuion-images/10.jpg");
 }
 #c11 {
   background-image: url("/src/images/evoltuion-images/11.jpeg");
 }
 #c12 {
-  background-image: url("/src/images/evoltuion-images/12.jpg");
+  background-image: url("/src/images/evoltuion-images/12.jpeg");
 }
 #c13 {
   background-image: url("/src/images/evoltuion-images/13.jpg");
@@ -99,6 +99,18 @@
 }
 #c15 {
   background-image: url("/src/images/evoltuion-images/15.jpg");
+}
+#c16 {
+  background-image: url("/src/images/evoltuion-images/16.jpg");
+}
+#c17 {
+  background-image: url("/src/images/evoltuion-images/17.jpg");
+}
+#c18 {
+	background-image: url("/src/images/evoltuion-images/11.jpeg");
+  }
+#c19 {
+background-image: url("/src/images/evoltuion-images/13.jpg");
 }
 
 .relative {

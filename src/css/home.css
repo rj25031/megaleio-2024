@@ -185,8 +185,8 @@
 }
 .darkest{
     position: absolute;
-    top: -23%;
-    left: -5%;
+    top: -25%;
+    left: -10%;
     width: 100%;
     z-index: 2;
 }
@@ -216,4 +216,50 @@ div h1.right-0{
     width: 50%;
     padding: 3rem;
     text-align: justify;
+}
+
+@media screen and (width <= 768px) {
+	.mid-cloud{
+		width: 100vw;
+		height: 100vh;
+	}
+	
+	.corner-cloud-left{
+		width: 100vw;
+		height: 70vh;
+	}
+	.corner-cloud-right{
+		width: 100vw;
+		height: 70vh;
+	}
+	.logo-img{
+		width: 100vw;
+		z-index: 1;
+	}
+	.darkest{
+		width: 100vw;
+		height: 50vh;
+		top: 25vh;
+		left: 0;
+	}
+	.poster{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		padding: 2rem;
+	}
+	.poster-img{
+		width: 100%;
+	}
+	.content{
+		width: 100%;
+		padding: 0.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: justify;
+	}
+
 }

@@ -6,8 +6,9 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Sponsor  from "../Components/Sponsor";
 import Countdown from "../Components/Countdown";
-import Content from "../Components/Content";
+// import Content from "../Components/Content";
 import ImgText from "../Components/ImgText";
+import Content from "../Components/content2"
 function HomePage() {
   const cloudContainer = useRef(null);
  
@@ -128,23 +129,23 @@ function HomePage() {
         ref={cloudContainer}
         className="main-section w-screen h-screen bg-black"
       >
-        <div className="img-hero absolute top-0 left-96 z-0">
-          <h1 className="harry absolute text-8xl w-screen font-bold text-center top-52 right-0">
-            Save the Date's February 23rd-24th, 2024{" "}
+        <div className="img-hero absolute top-0 left-96 z-0 sm:left-0">
+          <h1 className="sm:text-8xl text-yellow-500 harry absolute text-8xl w-screen font-bold text-center top-52 right-1 sm:left-0">
+            Save the Date : March 22nd-23rd, 2024{" "}
           </h1>
           <img
-            className="mid-cloud-2nd"
+            className="mid-cloud-2nd sm:relative sm:left-0 sm:right-0 sm:top-44"
             src="Assets\clouds\mid-dark.png"
             alt="clouds"
           />
-          <img className="logo-img" src="megaleio png.png" alt="megalio" />
+          <img className="logo-img sm:relative sm:top-44" src="megaleio png.png" alt="megalio" />
         </div>
         <div className="collage harry absolute text-8xl w-screen font-bold text-center top-52 left-0">
-          {/* <h1 className="mb-6">
+          <h1 className="mb-6 text-yellow-500 sm:text-5xl">
             St. John College of Engineering and Management
-          </h1> */}
-          <img src="Assets\text.webp" alt="" />
-          {/* <h3 className="mb-4"> Presents </h3> */}
+          </h1>
+          {/* <img src="Assets\text.webp" alt="" /> */}
+          <h3 className="mb-4 text-yellow-500"> Presents </h3>
         </div>
         <div className="clouds">
           <img
@@ -153,12 +154,12 @@ function HomePage() {
             alt="light"
           />
           <img
-            className="mid-cloud-1st"
+            className="mid-cloud-1st sm:relative sm:left-0 sm:right-0 sm:top-44"
             src="Assets\clouds\cloud1-dark.png"
             alt="clouds"
           />
           <img
-            className="darkest"
+            className="darkest sm:relative"
             src="Assets\clouds\darkest.png"
             alt="clouds"
           />
@@ -202,11 +203,15 @@ function HomePage() {
           <img  src="Assets/final.webp" alt="" />
           </div>
           <div className="content">
-            <h1 className="text-3xl font-bold mb-4">MEGALIEO 2024</h1>
+            <h1 className="text-3xl font-bold mb-4">MEGALEIO 2024</h1>
          <p className="text-xl"> Welcome to Megaleio: A National Level Intercollegiate Technical Event where innovation meets excellence! Megaleio brings together the brightest minds from across the country to showcase their skills, knowledge, and creativity. With a plethora of competitions, Megaleio offers a platform for students to explore the latest trends in technology, engage in meaningful discussions, and network with industry experts. Join us on this exciting journey of learning, collaboration, and fun as we celebrate the spirit of innovation and technical prowess at Megaleio!"</p>
           </div>
+		<div className="relative z-50 h-16">
+			<img src="./../images/poster-bg.png" alt="" />
+		</div>
         </div>
       </section>
+	  {/* <Content></Content>  */}
       {/* <ImgText></ImgText> */}
       {/* <Content></Content> */}
       <Countdown></Countdown>

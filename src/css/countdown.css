@@ -52,3 +52,18 @@
     padding: 0.6rem 0;
     font-size: 20px;
 }
+
+@media screen and (width <= 768px) {
+	.counter-section{
+		grid-template-columns: 90%;
+	}
+	.sub_timer{
+		margin: 0.3rem;
+	}
+	.digit{
+		padding: 0.1rem;
+	}
+	.digit_name{
+		font-size: 15px;
+	}
+}

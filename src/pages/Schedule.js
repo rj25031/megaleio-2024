@@ -87,7 +87,7 @@ function Schedule() {
       {
         <div className="timeline-container relative" ref={container}>
           <div
-            className="centering fixed p-3 pr-12 rounded-r-3xl text-white font-bold top-32 z-50 blur-background"
+            className="centering fixed p-3 pr-10 rounded-r-3xl text-white font-bold top-32 z-50 blur-background"
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
           >
@@ -131,26 +131,6 @@ function Schedule() {
                   )
               )}
             </ul>
-            <p className="text-3xl sm:text-xl">DAY 3</p>
-            <ul className="centering">
-              {/* Loop through scheduleData to render the timeline */}
-              {scheduleData.map(
-                (tl, index) =>
-                  tl.day === 3 && (
-                    <li
-                      key={index}
-                      onClick={() => handleListItemClick(index)}
-                      className={
-                        current === index + 1
-                          ? "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph current"
-                          : "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph "
-                      }
-                    >
-                      <p className="mt-1">{tl.time}</p>
-                    </li>
-                  )
-              )}
-            </ul>
             <div className=" relative">
             <h1 className="sch">SCHEDULE</h1>
           </div>
@@ -173,9 +153,9 @@ function Schedule() {
                 <h1 data-aos="fade-up" className="text-9xl sm:text-5xl mb-3">
                   {tl.title.toUpperCase()}
                 </h1>
-                <h2 data-aos="fade-up" className="text-4xl sm:text-3xl mb-3">
+                <h1 data-aos="fade-up" className="text-4xl sm:text-3xl mb-3">
                   {tl.time}
-                </h2>
+                </h1>
                 <h3 data-aos="fade-up" className="text-4xl sm:text-3xl mb-3">
                   {tl.place.toUpperCase()}
                 </h3>

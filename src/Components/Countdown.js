@@ -13,7 +13,7 @@ const TimerPage = () => {
   }, []);
 
   function calculateTimeRemaining() {
-    const targetTime = new Date("March 23, 2024 09:30:00").getTime();
+    const targetTime = new Date("March 22, 2024 10:00:00").getTime();
     const currentTime = new Date().getTime();
     const remainingMilliseconds = targetTime - currentTime;
 
@@ -34,8 +34,8 @@ const TimerPage = () => {
     <section className='counter-section'>
 
     <div className="wrapper">
-      <h1 className="heading-counter font-bold text-4xl">Countdown to Megalieo: Unleashing Innovation and Excellence!</h1>
-      <p className="description-counter text-base">Join us for the most awaited national technical event, Megalieo! Prepare to witness groundbreaking innovations, connect with industry experts, and showcase your skills on a national platform. Get ready to be inspired, challenged, and amazed as we bring together the brightest minds in technology for an unforgettable experience. Mark your calendars and stay tuned for updates as we gear up to redefine the future together!</p>
+      <h1 className="heading-counter font-bold text-4xl">Countdown to Megaleio: Unleashing Innovation and Excellence!</h1>
+      <p className="description-counter text-base">Join us for the most awaited national technical event, Megaleio! Prepare to witness groundbreaking innovations, connect with industry experts, and showcase your skills on a national platform. Get ready to be inspired, challenged, and amazed as we bring together the brightest minds in technology for an unforgettable experience. Mark your calendars and stay tuned for updates as we gear up to redefine the future together!</p>
 
       <div className="timer">
         <div className="sub_timer">
