@@ -217,7 +217,8 @@ background-image: url("/src/images/evoltuion-images/13.jpg");
   }
   .sch{
     top: -12rem;
-    left: -1rem;
+    left: 1.9rem;
+	font-size: x-large;
   }
 }
 
