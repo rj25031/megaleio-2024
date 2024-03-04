@@ -219,6 +219,9 @@ div h1.right-0{
 }
 
 @media screen and (width <= 768px) {
+.main-section{
+    overflow: hidden;
+}
 	.mid-cloud{
 		width: 100vw;
 		height: 100vh;
