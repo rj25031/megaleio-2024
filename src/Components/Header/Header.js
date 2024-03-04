@@ -29,12 +29,12 @@ const Header = () => {
 
 
   const nav_list_mob =
-    'mx-5 xl:mx-0 py-2 text-xl nabar  xs:text-md px-5 hover:bg-orange-600 opacity-1 text-white transition-all duration-500 hover:cursor-pointer'
+    'mx-5 xl:mx-0 py-2 text-xl nabar sm:mx-1  xs:text-md px-5 hover:bg-orange-600 opacity-1 text-white transition-all duration-500 hover:cursor-pointer'
   const nav_list =
     'mx-5 xl:mx-0 py-2 text-xl nabar  xs:text-md px-5 hover:bg-yellow-500 hover:rounded-2xl opacity-0 text-white transition-all duration-500 hover:cursor-pointer'
   return (
     <div ref={container} className="fixed header w-full top-0 ">
-      <div  className="flex  justify-between items-center px-8 lg:px-10 p-2 bg-transparent">
+      <div  className="flex  justify-between items-center sm:px-3 px-8 lg:px-10 p-2 bg-transparent">
         <Link to="/">
           <div className="flex items-center">
             <img
@@ -42,7 +42,7 @@ const Header = () => {
               src="megaleio png.png"
               alt="Megaleio"
             />
-            <h1 className="mx-5 text-4xl harry sm:text-2xl xs:text-lg font-bold text-yellow-500  tracking-widest ">
+            <h1 className="mx-5 sm:mx-2 text-4xl harry sm:text-2xl  font-bold text-orange-600  tracking-widest ">
               MEGALEIO
             </h1>
           </div>
@@ -70,7 +70,7 @@ const Header = () => {
             </Link>
           </ul>
         </div>
-        <div className="text-orange-600 text-3xl xs:text-xl transition-all duration-500 hover:cursor-pointer hidden xl:block">
+        <div className="text-orange-600 text-3xl xs:text-2xl transition-all duration-500 hover:cursor-pointer hidden xl:block">
           {!isOpen && (
             <div onClick={buttonClickHandler}>
               <AiOutlineMenu />
