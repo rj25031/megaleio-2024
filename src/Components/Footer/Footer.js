@@ -25,12 +25,12 @@ const Footer = () => {
               <ul className="footer-phone-numbers">
                 <li className="footer-phone-number">
                   <a href="tel:+918147334657" className="footer-link">
-                    <FaPhone /> Swapnil Malipatil <h1>(Faculty Coordinator)</h1>&nbsp;  8147334657
+                    <FaPhone /><h1>Deep Patil </h1>&nbsp;  +91 97653 92092
                   </a>
                 </li>
                 <li className="footer-phone-number">
                   <a href="tel:+917020529126" className="footer-link">
-                    <FaPhone /> Nirmit Patil <h1>(Student Coordinator)</h1>&nbsp;  7020529126
+                    <FaPhone /><h1>Nirmit Patil</h1>&nbsp; +91 7020529126
                   </a>
                 </li>
               </ul>

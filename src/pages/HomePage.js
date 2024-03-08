@@ -1,14 +1,15 @@
 import React, { useRef } from "react";
 import "../css/home.css";
 import Layout from "../Components/Layouts/Layout";
+import {clouds  } from '../Data/Data';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Sponsor  from "../Components/Sponsor";
 import Countdown from "../Components/Countdown";
 // import Content from "../Components/Content";
-import ImgText from "../Components/ImgText";
-import Content from "../Components/content2"
+// import ImgText from "../Components/ImgText";
+// import Content from "../Components/content2"
 function HomePage() {
   const cloudContainer = useRef(null);
  
@@ -123,6 +124,7 @@ function HomePage() {
       "b"
     );
   });
+
   return (
     <Layout>
       <section
@@ -135,60 +137,66 @@ function HomePage() {
           </h1>
           <img
             className="mid-cloud-2nd sm:relative sm:left-0 sm:right-0 sm:top-44"
-            src="Assets\clouds\mid-dark.png"
+            src={clouds.midDark}
             alt="clouds"
+            loading="eager"
           />
-          <img className="logo-img sm:relative sm:top-44" src="megaleio png.png" alt="megalio" />
+          <img className="logo-img sm:relative sm:top-44" src="megaleio png.png" loading="eager" alt="megalio" />
         </div>
         <div className="collage harry absolute text-8xl w-screen font-bold text-center top-52 left-0">
           <h1 className="mb-6 text-yellow-500 sm:text-5xl">
             St. John College of Engineering and Management
           </h1>
-          {/* <img src="Assets\text.webp" alt="" /> */}
           <h3 className="mb-4 text-yellow-500"> Presents </h3>
         </div>
         <div className="clouds">
           <img
             className="light"
-            src="Assets\clouds\lightining.gif"
+            src={clouds.light}
             alt="light"
+            loading="eager"
           />
           <img
             className="mid-cloud-1st sm:relative sm:left-0 sm:right-0 sm:top-44"
-            src="Assets\clouds\cloud1-dark.png"
+            src={clouds.c1Dark}
             alt="clouds"
           />
           <img
             className="darkest sm:relative"
-            src="Assets\clouds\darkest.png"
+            src={clouds.darkest}
             alt="clouds"
+            loading="eager"
           />
           <img
             className="round-cloud"
-            src="Assets\clouds\round-dark.png"
+            src={clouds.round}
             alt="clouds"
           />
         </div>
         <div className="clouds">
           <img
             className="light"
-            src="Assets\clouds\lightining.gif"
+            src={clouds.light}
             alt="light"
+            loading="eager"
           />
           <img
             className="mid-cloud"
-            src="Assets\clouds\cloud4-dark.png"
+            src={clouds.c4Dark}
             alt="clouds"
+            loading="eager"
           />
           <img
             className="corner-cloud-right"
-            src="Assets\clouds\cloud2-dark.png"
+            src={clouds.corner}
             alt="clouds"
+            loading="eager"
           />
           <img
             className="corner-cloud-left "
-            src="Assets\clouds\cloud2-dark.png"
+            src={clouds.corner}
             alt="clouds"
+            loading="eager"
           />
         </div>
       </section>
@@ -200,22 +208,22 @@ function HomePage() {
       <section className="poster-section">
         <div className="poster">
           <div className="poster-img">
-          <img  src="Assets/final.webp" alt="" />
+          <img  src={clouds.poster} loading="eager" alt="" />
           </div>
           <div className="content">
             <h1 className="text-3xl font-bold mb-4">MEGALEIO 2024</h1>
          <p className="text-xl"> Welcome to Megaleio: A National Level Intercollegiate Technical Event where innovation meets excellence! Megaleio brings together the brightest minds from across the country to showcase their skills, knowledge, and creativity. With a plethora of competitions, Megaleio offers a platform for students to explore the latest trends in technology, engage in meaningful discussions, and network with industry experts. Join us on this exciting journey of learning, collaboration, and fun as we celebrate the spirit of innovation and technical prowess at Megaleio!"</p>
           </div>
 		<div className="relative z-50 h-16">
-			<img src="./../images/poster-bg.png" alt="" />
+			<img src="./../images/poster-bg.png" loading="eager" alt="" />
 		</div>
         </div>
       </section>
 	  {/* <Content></Content>  */}
       {/* <ImgText></ImgText> */}
-      {/* <Content></Content> */}
       <Countdown></Countdown>
       <Sponsor></Sponsor>
+      {/* <Content></Content> */}
 
     </Layout>
   );

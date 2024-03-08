@@ -1,27 +1,117 @@
-import coderelay from "../images/coderelay.jpg";
-import roboWar from "../images/robo-war.jpg";
-import roboSoccer from "../images/robo-soccer.jpg";
-import megaHack from "../images/megahack.jpg";
-import blindC from "../images/blindc.jpg";
-import bpp from "../images/bpp.jpg";
-import bgmi from "../images/bgmi.jpg";
-import bridgeIt from "../images/bridge-it.jpg";
-import maze from "../images/robo-maze.jpg";
-import neon from "../images/neon_cricket.jpeg";
-import quiz from "../images/tech-quiz.jpg";
-import meg from "../images/megaleio2023.jpg";
-import laser_tag from "../images/laser-tag.jpg";
-import opmd from "../images/civil-junkyard.jpg";
-import SP from "../images/Team/Swapnil Malipatil.jpeg"
-import NP from "../images/Team/Nirmit Patil.jpeg"
-import DP from "../images/Team/Deep Patil.jpeg"
-import PB from "../images/Team/Priyal Bari.jpeg"
-import AT from "../images/Team/Anushka Thakur.jpeg"
-import SG from "../images/Team/Sarvesh Gharat.jpeg"
-import VY from "../images/Team/Vishal Yadav.jpeg.jpg"
-import google from "../images/Google-logo.png";
-import unstop from "../images/unstop.jpg"
-import plift from "../images/power1-lift.jpg"
+import coderelay from "../images/coderelay.webp";
+import roboWar from "../images/robo-war.webp";
+import roboSoccer from "../images/robo-soccer.webp";
+import megaHack from "../images/megahack.webp";
+import blindC from "../images/blindc.webp";
+import bpp from "../images/bpp.webp";
+import bgmi from "../images/bgmi.webp";
+import bridgeIt from "../images/bridge-it.webp";
+import maze from "../images/robo-maze.webp";
+import neon from "../images/neon_cricket.webp";
+import quiz from "../images/tech-quiz.webp";
+import meg from "../images/megaleio2023.webp";
+import laser_tag from "../images/laser-tag.webp";
+import opmd from "../images/civil-junkyard.webp";
+import SP from "../images/Team/Swapnil Malipatil.webp"
+import NP from "../images/Team/Nirmit Patil.webp"
+import DP from "../images/Team/Deep Patil.webp"
+import PB from "../images/Team/Priyal Bari.webp"
+import AT from "../images/Team/Anushka Thakur.webp"
+import SG from "../images/Team/Sarvesh Gharat.webp"
+import VY from "../images/Team/Vishal Yadav.webp"
+import google from "../images/Google-logo.webp";
+import unstop from "../images/unstop.webp";
+import plift from "../images/power1-lift.webp";
+import i1 from "../images/evoltuion-images/1.webp";
+import i2 from "../images/evoltuion-images/2.webp";
+import i3 from "../images/evoltuion-images/3.webp";
+import i4 from "../images/evoltuion-images/4.webp";
+import i5 from "../images/evoltuion-images/5.webp";
+import i6 from "../images/evoltuion-images/6.webp";
+import i7 from "../images/evoltuion-images/7.webp";
+import i8 from "../images/evoltuion-images/8.webp";
+import i9 from "../images/evoltuion-images/9.webp";
+import i10 from "../images/evoltuion-images/10.webp";
+import i11 from "../images/evoltuion-images/11.webp";
+import i12 from "../images/evoltuion-images/12.webp";
+import i13 from "../images/evoltuion-images/13.webp";
+import i14 from "../images/evoltuion-images/14.webp";
+import i15 from "../images/evoltuion-images/15.webp";
+import i16 from "../images/evoltuion-images/16.webp";
+import i17 from "../images/evoltuion-images/17.webp";
+import midDark from "../images/Assets/clouds/mid-dark.webp";
+import round from "../images/Assets/clouds/round-dark.webp";
+import corner from "../images/Assets/clouds/cloud2-dark.webp";
+import c1Dark from "../images/Assets/clouds/cloud1-dark.webp";
+import c4Dark from "../images/Assets/clouds/cloud4-dark.webp";
+import light from '../images/Assets/clouds/lightining.gif';
+import darkest from '../images/Assets/clouds/darkest.webp';
+import poster from '../images/Assets/final.webp';
+
+
+export const clouds = {
+	midDark : midDark,
+	round : round,
+	corner : corner,
+	c1Dark : c1Dark,
+	c4Dark : c4Dark,
+	light : light,
+	darkest : darkest,
+	poster : poster,
+}
+
+export const images = [
+midDark,
+round,
+corner,
+c1Dark,
+c4Dark,
+light,
+darkest,
+poster,
+coderelay,
+// roboWar,
+// roboSoccer,
+// megaHack,
+// blindC,
+// bpp,
+// bgmi,
+// bridgeIt,
+// maze,
+// neon,
+// quiz,
+// meg,
+// laser_tag,
+// opmd,
+// SP,
+// NP,
+// DP,
+// PB,
+// AT,
+// SG,
+// VY,
+// google,
+// unstop,
+// plift,
+// i1,
+// i2,
+// i3,
+// i4,
+// i5,
+// i6,
+// i7,
+// i8,
+// i9,
+// i10,
+// i11,
+// i12,
+// i13,
+// i14,
+// i15,
+// i16,
+// i17,
+
+]
 
 export const scheduleData = [
   {
@@ -30,6 +120,7 @@ export const scheduleData = [
     title: "Inauguration",
     time: "10:00 A.M.",
     place: "Quadrangle",
+	img: i1,
 },
 {
 	id: 2,
@@ -37,6 +128,7 @@ export const scheduleData = [
 	title: "Bridge It",
 	time: "10:30 A.M.",
 	place: "Auditorium",
+	img: i2,
 },
 {
 	id: 3,
@@ -44,6 +136,7 @@ export const scheduleData = [
 	title: "Laser Tag",
 	time: "10:30 A.M.",
 	place: "First Floor",
+	img: i3,
 },
 {
 	id: 4,
@@ -51,6 +144,7 @@ export const scheduleData = [
 	title: "Neon Cricket",
 	time: "10:30 A.M.",
 	place: "BCR B Wing, First Floor",
+	img: i4,
 },
 {
   id: 5,
@@ -58,6 +152,7 @@ export const scheduleData = [
   title: "BGMI",
   time: "10:30 A.M.",
   place: "Lab (3rd Floor IT Dept.)",
+  img: i5,
 },
 {
   id: 6,
@@ -65,6 +160,7 @@ export const scheduleData = [
   title: "Power Lifting",
   time: "11:00 A.M.",
   place: "Lab (3rd Floor IT Dept.)",
+  img: i6,
 },
 {
 	id: 7,
@@ -72,6 +168,7 @@ export const scheduleData = [
 	title: "Business Plan Presentation",
 	time: "1:30 A.M.",
 	place: "First Floor Computer Classroom",
+	img: i7,
 },
 {
 	id: 8,
@@ -79,6 +176,7 @@ export const scheduleData = [
 	title: "Code Relay",
 	time: "1:30 P.M.",
 	place: "Third Floor, A23 IT Dept.",
+	img: i8,
 },
 {
 	id: 9,
@@ -86,6 +184,7 @@ export const scheduleData = [
 	title: "Bridge It",
 	time: "9:30 A.M.",
 	place: "Quadrangle",
+	img: i9,
 },
 {
 	id: 10,
@@ -93,6 +192,7 @@ export const scheduleData = [
 	title: "Civil Junkyard",
 	time: "9:30 A.M.",
 	place: "Quadrangle",
+	img: i10,
 },
 {
 	id: 11,
@@ -100,6 +200,7 @@ export const scheduleData = [
 	title: "Laser Tag",
 	time: "9:30 A.M.",
 	place: "First Floor",
+	img: i11,
 },
 {
 	id: 12,
@@ -107,6 +208,7 @@ export const scheduleData = [
 	title: "Neon Cricket",
 	time: "10:30 A.M.",
 	place: "BCR B Wing, First Floor",
+	img: i12,
 },
 {
   id: 13,
@@ -114,6 +216,7 @@ export const scheduleData = [
   title: "BGMI",
   time: "10:30 A.M.",
   place: "Lab (3rd Floor IT Dept.)",
+  img: i13,
 },
 {
 	id: 14,
@@ -121,6 +224,7 @@ export const scheduleData = [
 	title: "Robomaze",
 	time: "10:30 A.M.",
 	place: "Quadrangle",
+	img: i14,
 },
 {
 	id: 15,
@@ -128,6 +232,7 @@ export const scheduleData = [
 	title: "Robosoccer",
 	time: "10:30 A.M.",
 	place: "Quadrangle",
+	img: i15,
 },
 {
   id: 16,
@@ -135,6 +240,7 @@ export const scheduleData = [
   title: "Power Lifting",
   time: "11:00 A.M.",
   place: "Lab (3rd Floor IT Dept.)",
+  img: i16,
 },
 {
   id: 17,
@@ -142,6 +248,7 @@ export const scheduleData = [
   title: "Blind C",
   time: "12:00 A.M.",
   place: "Lab (A-Wing, IT Dept.)",
+  img: i17,
 },
 {
   id: 18,
@@ -149,6 +256,7 @@ export const scheduleData = [
   title: "Robowar",
   time: "12:30",
   place: "Quadrangle",
+  img: i17,
 },
   {
     id: 19,

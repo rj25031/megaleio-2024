@@ -1,125 +1,85 @@
-import "../css/content.css";
+import React from "react";
+import "../css/cont.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { home_data } from "../Data/Data";
+
 const Content = () => {
-  const container = useRef(null);
-  const headline = useRef(null);
-  useGSAP(() => {
-    const details = gsap.utils.toArray(
-      ".desktopContentSection:not(:first-child)"
-    );
-    const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
+  // const gallery = useRef(null);
+  // const pyd = useRef(null);
+  // useGSAP(
+  //   () => {
+  //     // gsap.registerPlugin(ScrollTrigger);
 
-    gsap.set(photos, { yPercent: 101 });
+  //     const tml = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: pyd.current,
+  //         pin: ".right",
+  //         pinSpacing: false,
+  //         // animation: animation,
+  //         scrub: 1,
+  //         markers: true,
+  //       },
+  //     });
 
-    const allPhotos = gsap.utils.toArray(".desktopPhoto");
+  //     tml.set(".photo:not(:first-child)", { opacity: 0, scale: 0.5 });
 
-    // create
-    let mm = gsap.matchMedia();
+  //     tml.to(".photo:not(:first-child)", {
+  //       opacity: 1,
+  //       scale: 1,
+  //       duration: 1,
+  //       stagger: 1,
+  //     });
 
-    // add a media query. When it matches, the associated function will run
-    mm.add("(min-width: 600px)", () => {
-      ScrollTrigger.create({
-        trigger: ".gallery",
-        start: "top top",
-        end: "bottom bottom",
-        pin: ".right",
-      });
+  //     // ScrollTrigger.create({
+  //     //   trigger: gallery.current,
+  //     //   start: "top top",
+  //     //   end: "bottom bottom",
+  //     //   pin: ".right",
+  //     //   pinSpacing: false,
+  //     //   animation: animation,
+  //     //   scrub: false,
+  //     //   markers: true,
+  //     // });
+  //   },
+  //   { scope: pyd.current }
+  // );
 
-      //create scrolltrigger for each details section
-      //trigger photo animation when headline of each details section
-      //reaches 80% of window height
-      details.forEach((detail, index) => {
-        let animation = gsap
-          .timeline()
-          .to(photos[index], { yPercent: 0 })
-          .set(allPhotos[index], { autoAlpha: 0 });
-        ScrollTrigger.create({
-          trigger: headline,
-          start: "top 80%",
-          end: "top 50%",
-          animation: animation,
-          scrub: true,
-          markers: false,
-        });
-      });
-    });
-  });
   return (
-    <section ref={container} className=" bg-white text-black">
-      <div class="gallery">
-        <div class="left">
-          <div class="desktopContent">
+    <section className="pyd">
+      <div className="gallery sticky top-0">
+        <div className="left">
+          <div className="detailsWrapper">
             {home_data.map((data, index) => {
               return (
-                <div key={index} class="desktopContentSection">
-                  <h1 ref={headline}>Red</h1>
-                  <p>
-                    Red is a color often associated with strong emotions such as
-                    passion, love, and anger. It's a bold and attention-grabbing
-                    color that can evoke feelings of excitement, warmth, and
-                    energy.
-                  </p>
+                <div key={index} className="details flex flex-row">
+                  <div>
+                    <h1 className="headline">{data.title}</h1>
+                    <p className="text">{data.desc}</p>
+                  </div>
+    
+                  <div className="img">
+                    <img src={data.img} alt="" />
+                  </div>
                 </div>
               );
             })}
           </div>
         </div>
 
-        <div class="right">
-          <div class="mobileContent">
-            <div class="mobilePhoto red"></div>
-            <h1>Red</h1>
-            <p>
-              Red is a color often associated with strong emotions such as
-              passion, love, and anger. It's a bold and attention-grabbing color
-              that can evoke feelings of excitement, warmth, and energy.
-            </p>
-
-            <div class="mobilePhoto green"></div>
-            <h1>Green</h1>
-            <p>
-              Green is a color that is often associated with nature, growth, and
-              harmony. It is a calming and relaxing color that can evoke
-              feelings of balance, stability, and freshness. In color
-              psychology, green is said to represent balance and stability,
-              making it a popular choice for branding and marketing in the
-              health and wellness industry.{" "}
-            </p>
-
-            <div class="mobilePhoto pink"></div>
-            <h1>Pink</h1>
-            <p>
-              Pink is a color that is often associated with femininity, romance,
-              and sweetness. It is a softer and more delicate shade of red that
-              can evoke feelings of warmth, love, and nurturing. In the world of
-              branding and marketing, pink is often used to target a female
-              audience or to promote products that are associated with beauty,
-              love, or romance.
-            </p>
-
-            <div class="mobilePhoto blue"></div>
-            <h1>Blue</h1>
-            <p>
-              Blue is a color that is often associated with calmness, trust, and
-              reliability. It is a peaceful and serene color that can evoke
-              feelings of stability, security, and professionalism. In color
-              psychology, blue is said to represent loyalty and trust, making it
-              a popular choice for branding and marketing in the finance and
-              technology industries.
-            </p>
+        {/* <div className="right">
+          <div className="photos">
+            {home_data.map((data, index) => {
+              return (
+                <div key={index} className="photo">
+                  <img src={data.img} alt="img" />
+                </div>
+              );
+            })}
           </div>
-
-          <div class="desktopPhotos">
-            <div class="desktopPhoto red"></div>
-            <div class="desktopPhoto green"></div>
-            <div class="desktopPhoto pink"></div>
-            <div class="desktopPhoto blue"></div>
-          </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

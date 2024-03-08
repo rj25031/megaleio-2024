@@ -26,7 +26,7 @@ header a{
 }
 /* carousel */
 .carousel{
-    height: 100vh;
+    height: 107vh;
     margin-top: -50px;
     width: 100vw;
     overflow: hidden;
@@ -319,6 +319,24 @@ header a{
         filter: blur(20px);
         opacity: 0;
     }
+}
+
+.list-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px); 
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.event-lst{
+    position: absolute;
+    top: 35%;
+    transform: rotate(-90deg);
+    font-size: 3rem;
+    left: 50%;
 }
 @media screen and (max-width: 678px) {
     .carousel .list .item .content{

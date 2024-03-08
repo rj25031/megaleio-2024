@@ -145,6 +145,7 @@ function Schedule() {
               id={`c${tl.id}`}
               className="card"
               ref={(el) => (scheduleDataRef.current[index] = el)}
+              style={{backgroundImage:`url(${tl.img})`}}
             >
               <div className="inauguration event">
                 <p data-aos="fade-up" className="text-5xl sm:text-3xl mb-3">

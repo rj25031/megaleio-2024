@@ -55,63 +55,6 @@
   left: 20%;
   z-index: 15;
 }
-#c1 {
-  background-image: url("/src/images/evoltuion-images/1.jpeg");
-}
-#c2 {
-  background-image: url("/src/images/evoltuion-images/2.jpeg");
-}
-#c3 {
-  background-image: url("/src/images/evoltuion-images/3.jpg");
-}
-#c4 {
-  background-image: url("/src/images/evoltuion-images/4.jpeg");
-}
-#c5 {
-  background-image: url("/src/images/evoltuion-images/5.jpg");
-}
-#c6 {
-  background-image: url("/src/images/evoltuion-images/6.jpg");
-}
-#c7 {
-  background-image: url("/src/images/evoltuion-images/7.jpg");
-}
-#c8 {
-  background-image: url("/src/images/evoltuion-images/8.jpg");
-}
-#c9 {
-  background-image: url("/src/images/evoltuion-images/9.jpeg");
-}
-#c10 {
-  background-image: url("/src/images/evoltuion-images/10.jpg");
-}
-#c11 {
-  background-image: url("/src/images/evoltuion-images/11.jpeg");
-}
-#c12 {
-  background-image: url("/src/images/evoltuion-images/12.jpeg");
-}
-#c13 {
-  background-image: url("/src/images/evoltuion-images/13.jpg");
-}
-#c14 {
-  background-image: url("/src/images/evoltuion-images/14.jpg");
-}
-#c15 {
-  background-image: url("/src/images/evoltuion-images/15.jpg");
-}
-#c16 {
-  background-image: url("/src/images/evoltuion-images/16.jpg");
-}
-#c17 {
-  background-image: url("/src/images/evoltuion-images/17.jpg");
-}
-#c18 {
-	background-image: url("/src/images/evoltuion-images/11.jpeg");
-  }
-#c19 {
-background-image: url("/src/images/evoltuion-images/13.jpg");
-}
 
 .relative {
   position: relative;
@@ -171,7 +114,6 @@ background-image: url("/src/images/evoltuion-images/13.jpg");
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px); /* Adjust the blur intensity as needed */
   z-index: -1;
-  /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);  */
 }
 
 .timeline-container {

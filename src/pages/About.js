@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Layout from "../Components/Layouts/Layout";
 import "../css/about.css";
 import { about_data } from "../Data/Data";
+import megalio2024 from "../images/Assets/megaleio2020.jpg";
 
 function About() {
   useEffect(() => {
@@ -63,7 +64,7 @@ function About() {
               <div className="frame__content">
                 <img
                   className="frame-media frame-last"
-                  src="Assets/megaleio2023.jpg"
+                  src={megalio2024}
                   // autoplay
                   // loop
                   // muted

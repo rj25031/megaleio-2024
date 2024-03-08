@@ -66,19 +66,19 @@
 
 
 .red {
-	background-image: url("/src/images/blindc.jpg");
+	background-image: url("/src/images/blindc.webp");
 }
 
 .green {
-	background-image: url("/src/images/civil-junkyard.jpg");
+	background-image: url("/src/images/civil-junkyard.webp");
 }
 
 .blue {
-	background-image: url("./../images/laser-tag.jpg");
+	background-image: url("./../images/laser-tag.webp");
 }
 
 .pink{
-	background-image: url("./../images/open-mic.jpg");
+	background-image: url("./../images/open-mic.webp");
 }
 
 

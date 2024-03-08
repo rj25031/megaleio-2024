@@ -1,12 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import Layout from "../Components/Layouts/Layout";
 import "../css/event.css";
 import { event_list } from "../Data/Data";
+import btnImg from '../images/Assets/Asset 1.webp';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const EventPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [thumbnails, setThumbnails] = useState([]);
   const [carouselItems, setCarouselItems] = useState([]);
+  const [selectedEvent, setSelectedEvent] = useState(null);
+
+
+  const aniRef = useRef(null);
+
+  const handleHoverIn = () => {
+    aniRef.current = gsap.fromTo(".list-container", { x: "-70%" }, { x: "0%" });
+    aniRef.current.play();
+  };
+
+  const handleHoverOut = () => {
+    if (aniRef.current) {
+      aniRef.current.reverse();
+    }
+  };
+  const container = useRef(null);
+  useGSAP(
+    () => {
+      gsap.to(".list-container", { x: "-70%", duration: 2 });
+    },
+    { scope: container }
+  );
+
+
+
+
 
   const timeRunning = 3000;
   let timeAutoNext = 14000;
@@ -60,17 +89,54 @@ const EventPage = () => {
     }, timeRunning);
   };
 
-  function handleClick(n) {
+  const handleClick = (n) => {
     if (n >= 0) {
       showSlider("next");
       handleClick(n - 1);
     }
-  }
+  };
 
+  const handleEventClick = (n) => {
+    if (n < currentIndex) {
+      showSlider("prev");
+      if (n < currentIndex - 1) {
+        handleEventClick(n + 1); // Recursively call the function without delay
+      }
+    } else if (n > currentIndex) {
+      showSlider("next");
+      if (n > currentIndex + 1) {
+        handleEventClick(n - 1); // Recursively call the function without delay
+      }
+    } else if (n === currentIndex) {
+      console.log('at event');
+    }
+    setSelectedEvent(n); // Update selectedEvent state
+    console.log(n);
+    console.log(currentIndex);
+  };
+  
   return (
     <Layout>
-      <div className="carousel">
-        {/* <div className={`carousel ${currentIndex > 0 ? 'next' : ''}`}> */}
+      <div ref={container} className="carousel">
+        <ol className=" list-container list-decimal w-56 absolute z-50 top-52 left-0"
+        onMouseEnter={handleHoverIn}
+        onMouseLeave={handleHoverOut}
+        >
+          {event_list.map((event, index) => (
+            <li
+              key={index}
+              onClick={() => handleEventClick(index)}
+              className={ index === selectedEvent ? "selected" : ""}
+            >
+              {event.title}
+            </li>
+          ))}
+          <div className="event-lst">
+            <h1>
+              EVENT
+            </h1>
+          </div>
+        </ol>
         <div className="list">
           {carouselItems.map((item, index) => (
             <div
@@ -103,10 +169,7 @@ const EventPage = () => {
             <div
               key={index}
               className={`item ${index === currentIndex ? "active" : ""}`}
-              onClick={() => {
-                console.log(index);
-                handleClick(index);
-              }}
+              onClick={() => handleClick(index)}
             >
               <img src={thumbnail.image} alt={`Thumbnail ${index}`} />
               <div className="content">
@@ -119,12 +182,10 @@ const EventPage = () => {
 
         <div className="arrows">
           <button id="prev" onClick={() => showSlider("prev")}>
-            {/* &lt; */}
-            <img className="prev-img" src="Assets\Asset 1.png" alt="" />
+            <img className="prev-img" src={btnImg} alt="" />
           </button>
           <button id="next" onClick={() => showSlider("next")}>
-            {/* &gt; */}
-            <img className="next-img" src="Assets\Asset 1.png" alt="" />
+            <img className="next-img" src={btnImg} alt="" />
           </button>
         </div>
 
@@ -133,4 +194,5 @@ const EventPage = () => {
     </Layout>
   );
 };
+
 export default EventPage;

@@ -1,5 +1,5 @@
 .main-section{
-    background-image: url(/public/Assets/bg.jpg);
+    background-image: url(/src/images/Assets/bg.webp);
 }
 .main{
     position: relative;
