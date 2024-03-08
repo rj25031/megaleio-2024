@@ -22,9 +22,9 @@ const Sponsors = () => {
 	<div className="sponsors-container ">
 		<h2 className="sponsors-heading">Our Sponsors</h2>
 
-		<h2 className="sponsors-sub-heading title">Title Sponsors</h2>
+		<h2 className="sponsors-sub-heading titlesp">Title Sponsors</h2>
 		<ul className="sponsors-list">
-		{sponsors.map((sponsor, index) => (
+		{sponsors.map((sponsor, index) => ( 
 		<li key={index} className="sponsors-item title-items">
 			<Sponsor image={sponsor.img} title={sponsor.title} />
 		</li>

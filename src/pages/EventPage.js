@@ -16,7 +16,7 @@ const EventPage = () => {
   const aniRef = useRef(null);
 
   const handleHoverIn = () => {
-    aniRef.current = gsap.fromTo(".list-container", { x: "-70%" }, { x: "0%" });
+    aniRef.current = gsap.fromTo(".list-container", { x: "-78%" }, { x: "0%" });
     aniRef.current.play();
   };
 
@@ -28,7 +28,7 @@ const EventPage = () => {
   const container = useRef(null);
   useGSAP(
     () => {
-      gsap.to(".list-container", { x: "-70%", duration: 2 });
+      gsap.to(".list-container", { x: "-78%", duration: 2 });
     },
     { scope: container }
   );
@@ -118,7 +118,7 @@ const EventPage = () => {
   return (
     <Layout>
       <div ref={container} className="carousel">
-        <ol className=" list-container list-decimal w-56 sm:w-40 absolute z-50 top-52 left-0"
+        <ol className=" list-container list-decimal w-64 absolute z-50 top-52 sm:top-64 left-0"
         onMouseEnter={handleHoverIn}
         onMouseLeave={handleHoverOut}
         >
