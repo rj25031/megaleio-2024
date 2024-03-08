@@ -22,28 +22,19 @@ const Sponsors = () => {
 	<div className="sponsors-container ">
 		<h2 className="sponsors-heading">Our Sponsors</h2>
 
-		<h2 className="sponsors-sub-heading">Title Sponsors</h2>
+		<h2 className="sponsors-sub-heading title">Title Sponsors</h2>
 		<ul className="sponsors-list">
 		{sponsors.map((sponsor, index) => (
-		<li key={index} className="sponsors-item">
+		<li key={index} className="sponsors-item title-items">
 			<Sponsor image={sponsor.img} title={sponsor.title} />
 		</li>
 		))}
 		</ul>
-
-		<h2 className="sponsors-sub-heading">Platform Sponsors</h2>
-		<ul className="sponsors-list">
-		{platform.map((platform, index) => (
-		<li key={index} className="sponsors-item">
-			<Sponsor image={platform.img} title={platform.title} />
-		</li>
-		))}
-		</ul>
 		
-		<h2 className="sponsors-sub-heading">Powered By</h2>
+		<h2 className="sponsors-sub-heading powered">Powered By</h2>
 		<ul className="sponsors-list">
 		{powered_by.map((powered_by, index) => (
-		<li key={index} className="sponsors-item">
+		<li key={index} className="sponsors-item pow-items">
 			<Sponsor image={powered_by.img} title={powered_by.title} />
 		</li>
 		))}
@@ -56,16 +47,31 @@ const Sponsors = () => {
 			<Sponsor image={co_powered.img} title={co_powered.title} />
 		</li>
 		))}
+		<li className='sponsors-item'>
+			<div className='sponsor-title'>
+				JJ Trders
+			</div>
+		</li>
+		<li className='sponsors-item'>
+			<div className='sponsor-title'>
+				Concept Computers
+			</div>
+		</li>
+		<li className='sponsors-item'>
+			<div className='sponsor-title'>
+				DeviKrupa
+			</div>
+		</li>
 		</ul>
 
-		<h2 className="sponsors-sub-heading">Refreshments Sponsors</h2>
+		{/* <h2 className="sponsors-sub-heading">Refreshments Sponsors</h2>
 		<ul className="sponsors-list">
 		{refreshment.map((refreshment, index) => (
 		<li key={index} className="sponsors-item">
 			<Sponsor image={refreshment.img} title={refreshment.title} />
 		</li>
 		))}
-		</ul>
+		</ul> */}
 
 
 

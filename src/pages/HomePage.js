@@ -7,6 +7,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Sponsor  from "../Components/Sponsor";
 import Countdown from "../Components/Countdown";
+import img from "../images/Assets/torn-page.png"
 // import Content from "../Components/Content";
 // import ImgText from "../Components/ImgText";
 // import Content from "../Components/content2"
@@ -211,18 +212,27 @@ function HomePage() {
           <img  src={clouds.poster} loading="eager" alt="" />
           </div>
           <div className="content">
-            <h1 className="text-3xl font-bold mb-4">MEGALEIO 2024</h1>
-         <p className="text-xl"> Welcome to Megaleio: A National Level Intercollegiate Technical Event where innovation meets excellence! Megaleio brings together the brightest minds from across the country to showcase their skills, knowledge, and creativity. With a plethora of competitions, Megaleio offers a platform for students to explore the latest trends in technology, engage in meaningful discussions, and network with industry experts. Join us on this exciting journey of learning, collaboration, and fun as we celebrate the spirit of innovation and technical prowess at Megaleio!"</p>
+            <h1 className="text-3xl font-bold mb-4 color-maroon">MEGALEIO 2024</h1>
+         <p className="text-xl color-reddish"> Welcome to Megaleio: A National Level Intercollegiate Technical Event where innovation meets excellence! Megaleio brings together the brightest minds from across the country to showcase their skills, knowledge, and creativity. With a plethora of competitions, Megaleio offers a platform for students to explore the latest trends in technology, engage in meaningful discussions, and network with industry experts. Join us on this exciting journey of learning, collaboration, and fun as we celebrate the spirit of innovation and technical prowess at Megaleio!"</p>
           </div>
 		<div className="relative z-50 h-16">
 			<img src="./../images/poster-bg.png" loading="eager" alt="" />
 		</div>
         </div>
       </section>
+	  <div className='divider-parent'>
+		<div className='divider-child'><img src={img} alt="" /></div>
+	  </div>
 	  {/* <Content></Content>  */}
       {/* <ImgText></ImgText> */}
       <Countdown></Countdown>
+	  <div className='divider-parent'>
+		<div className='divider-child'><img src={img} alt="" /></div>
+	  </div>
       <Sponsor></Sponsor>
+	  <div className='divider-parent'>
+		<div className='divider-child'><img src={img} alt="" /></div>
+	  </div>
       {/* <Content></Content> */}
 
     </Layout>

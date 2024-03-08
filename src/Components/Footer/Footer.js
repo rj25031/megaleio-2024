@@ -24,13 +24,13 @@ const Footer = () => {
               <div className="footer-link-title">Phone Numbers</div>
               <ul className="footer-phone-numbers">
                 <li className="footer-phone-number">
-                  <a href="tel:+918147334657" className="footer-link">
-                    <FaPhone /><h1>Deep Patil </h1>&nbsp;  +91 97653 92092
+                  <a href="tel:+917020529126" className="footer-link">
+                    <FaPhone /> Nirmit Patil &nbsp;  7020529126
                   </a>
                 </li>
                 <li className="footer-phone-number">
-                  <a href="tel:+917020529126" className="footer-link">
-                    <FaPhone /><h1>Nirmit Patil</h1>&nbsp; +91 7020529126
+                  <a href="tel:+919765392092" className="footer-link">
+                    <FaPhone /> Deep Patil &nbsp;&nbsp;  9765392092
                   </a>
                 </li>
               </ul>
@@ -57,7 +57,7 @@ const Footer = () => {
             </li>
             <li className="footer-item">
               <div className="footer-link-title">Address</div>
-              <a href="https://maps.app.goo.gl/jrPEuCuDwFQkbigL7" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <a href="https://maps.app.goo.gl/jrPEuCuDwFQkbigL7" target="_blank" rel="noopener noreferrer" className="footer-link address-svg">
                 <FaMapMarkerAlt /> Palghar - Manor Rd, near Shakti Udyog, Industrial Area, Vevoor, Palghar, Maharashtra 401404
               </a>
             </li>

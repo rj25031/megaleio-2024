@@ -118,7 +118,7 @@ const EventPage = () => {
   return (
     <Layout>
       <div ref={container} className="carousel">
-        <ol className=" list-container list-decimal w-56 absolute z-50 top-52 left-0"
+        <ol className=" list-container list-decimal w-56 sm:w-40 absolute z-50 top-52 left-0"
         onMouseEnter={handleHoverIn}
         onMouseLeave={handleHoverOut}
         >

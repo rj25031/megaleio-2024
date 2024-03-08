@@ -42,7 +42,7 @@ const Header = () => {
               src="megaleio png.png"
               alt="Megaleio"
             />
-            <h1 className="mx-5 sm:mx-2 text-4xl harry sm:text-2xl  font-bold text-orange-600  tracking-widest ">
+            <h1 className="mx-5 sm:mx-2 text-4xl harry sm:text-2xl  font-bold color-reddish  tracking-widest ">
               MEGALEIO
             </h1>
           </div>

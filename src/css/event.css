@@ -73,7 +73,7 @@ header a{
 	text-align: left;
 }
 .carousel .list .item .topic{
-    color: #f1683a;
+    color: #d3a625;
     font-size: 3em;
 
 }
@@ -88,15 +88,23 @@ header a{
 }
 .carousel .list .item .buttons button{
 	border: none;
-    background-color: #eee;
+    background-color: #eeba30;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+	transition: all 0.3s ease-in-out;
+}
+.carousel .list .item .buttons button:hover{
+    background-color: #fff;
+    color: #eeba30;
 }
 .carousel .list .item .buttons button:nth-child(2){
 	background-color: transparent;
     border: 1px solid #fff;
-    color: #eee;
+    color: #eeba30
+}
+.carousel .list .item .buttons button:nth-child(2):hover{
+    background-color: #fff;
 }
 /* thumbail */
 .thumbnail{
@@ -258,7 +266,7 @@ header a{
     z-index: 1000;
     width: 0%;
     height: 10px;
-    background-color: #f1683a;
+    background-color: #eeba30;
     left: 0;
     top: 6%;
 }
@@ -328,7 +336,8 @@ header a{
     font-weight: 900;
     padding: 40px;
     cursor: pointer;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .event-lst{
@@ -338,6 +347,12 @@ header a{
     font-size: 3rem;
     left: 50%;
 }
+.color-maroon{
+	color: #740001;
+  }
+  .color-reddish{
+	color: #ae0001;
+  }
 @media screen and (max-width: 678px) {
     .carousel .list .item .content{
         padding-right: 0;
@@ -356,7 +371,16 @@ header a{
 		width: 80%;
 		padding: 3%;
 	}
-	
+	.event-lst{
+		font-size: 1.5rem;
+		left: 70%;
+		top: 45%;
+	}
+	.list-container{
+		padding: 30px;
+		font-size: 0.8rem;
+
+	}
 
 }
 

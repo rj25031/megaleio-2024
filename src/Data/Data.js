@@ -47,6 +47,8 @@ import c4Dark from "../images/Assets/clouds/cloud4-dark.webp";
 import light from '../images/Assets/clouds/lightining.gif';
 import darkest from '../images/Assets/clouds/darkest.webp';
 import poster from '../images/Assets/final.webp';
+import internshala from "../images/Internshala.png"
+import vector from "../images/vectoraca.jpg"
 
 
 export const clouds = {
@@ -564,59 +566,20 @@ export const about_data = [
 
 export const sponsors = [
 	{
-		title: 'Google',
-		img: google,
+		title: 'Internshala',
+		img: internshala,
 	},
-	{
-		title: 'Unstop',
-		img: unstop,
-	},
-	{
-		title: 'google',
-		img: google,
-	},
-];
-export const platform = [
-	{
-		title: 'Unstop',
-		img: unstop,
-	},
-	{
-		title: 'google',
-		img: google,
-	},
-	{
-		title: 'Unstop',
-		img: unstop,
-	},
-	
 ];
 export const powered_by = [
 	{
-		title: 'Google',
-		img: google,
-	},
-	{
 		title: 'Unstop',
 		img: unstop,
-	},
-	{
-		title: 'google',
-		img: google,
 	},
 ];
 export const co_powered = [
 	{
-		title: 'Unstop',
-		img: unstop,
-	},
-	{
-		title: 'google',
-		img: google,
-	},
-	{
-		title: 'Unstop',
-		img: unstop,
+		title: 'Vectors Academy',
+		img: vector,
 	},
 	
 ];

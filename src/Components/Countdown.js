@@ -34,25 +34,25 @@ const TimerPage = () => {
     <section className='counter-section'>
 
     <div className="wrapper">
-      <h1 className="heading-counter font-bold text-4xl">Countdown to Megaleio: Unleashing Innovation and Excellence!</h1>
-      <p className="description-counter text-base">Join us for the most awaited national technical event, Megaleio! Prepare to witness groundbreaking innovations, connect with industry experts, and showcase your skills on a national platform. Get ready to be inspired, challenged, and amazed as we bring together the brightest minds in technology for an unforgettable experience. Mark your calendars and stay tuned for updates as we gear up to redefine the future together!</p>
+      <h1 className="heading-counter font-bold text-4xl color-maroon">Countdown to Megaleio: Unleashing Innovation and Excellence!</h1>
+      <p className="description-counter text-base color-reddish">Join us for the most awaited national technical event, Megaleio! Prepare to witness groundbreaking innovations, connect with industry experts, and showcase your skills on a national platform. Get ready to be inspired, challenged, and amazed as we bring together the brightest minds in technology for an unforgettable experience. Mark your calendars and stay tuned for updates as we gear up to redefine the future together!</p>
 
       <div className="timer">
         <div className="sub_timer">
-          <h1 className="digit">{timeRemaining.day}</h1>
-          <p className="digit_name">Days</p>
+          <h1 className="digit color-reddish">{timeRemaining.day}</h1>
+          <p className="digit_name color-maroon">Days</p>
         </div>
         <div className="sub_timer">
-          <h1 className="digit">{timeRemaining.hour}</h1>
-          <p className="digit_name">Hours</p>
+          <h1 className="digit color-reddish">{timeRemaining.hour}</h1>
+          <p className="digit_name color-maroon">Hours</p>
         </div>
         <div className="sub_timer">
-          <h1 className="digit">{timeRemaining.min}</h1>
-          <p className="digit_name">Minutes</p>
+          <h1 className="digit color-reddish">{timeRemaining.min}</h1>
+          <p className="digit_name color-maroon">Minutes</p>
         </div>
         <div className="sub_timer">
-          <h1 className="digit">{timeRemaining.sec}</h1>
-          <p className="digit_name">Seconds</p>
+          <h1 className="digit color-reddish">{timeRemaining.sec}</h1>
+          <p className="digit_name color-maroon">Seconds</p>
         </div>
       </div>
     </div>
