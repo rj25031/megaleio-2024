@@ -1,8 +1,8 @@
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Layout from "../Components/Layouts/Layout";
 import "../css/event.css";
 import { event_list } from "../Data/Data";
-import btnImg from '../images/Assets/Asset 1.webp';
+import btnImg from "../images/Assets/Asset 1.webp";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -11,7 +11,6 @@ const EventPage = () => {
   const [thumbnails, setThumbnails] = useState([]);
   const [carouselItems, setCarouselItems] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
-
 
   const aniRef = useRef(null);
 
@@ -32,10 +31,6 @@ const EventPage = () => {
     },
     { scope: container }
   );
-
-
-
-
 
   const timeRunning = 3000;
   let timeAutoNext = 14000;
@@ -108,33 +103,32 @@ const EventPage = () => {
         handleEventClick(n - 1); // Recursively call the function without delay
       }
     } else if (n === currentIndex) {
-      console.log('at event');
+      console.log("at event");
     }
     setSelectedEvent(n); // Update selectedEvent state
     console.log(n);
     console.log(currentIndex);
   };
-  
-  return ( 
+
+  return (
     <Layout>
       <div ref={container} className="carousel">
-        <ol className=" list-container list-decimal w-64 absolute z-50 top-44 left-0"
-        onMouseEnter={handleHoverIn}
-        onMouseLeave={handleHoverOut}
+        <ol
+          className=" list-container list-decimal w-64 absolute z-50 top-44 left-0"
+          onMouseEnter={handleHoverIn}
+          onMouseLeave={handleHoverOut}
         >
           {event_list.map((event, index) => (
             <li
               key={index}
               onClick={() => handleEventClick(index)}
-              className={ index === selectedEvent ? "selected mb-2" : "mb-2"}
+              className={index === selectedEvent ? "selected mb-2" : "mb-2"}
             >
               {event.title}
             </li>
           ))}
           <div className="event-lst">
-            <h1>
-              EVENT
-            </h1>
+            <h1>EVENT</h1>
           </div>
         </ol>
         <div className="list">
@@ -150,7 +144,13 @@ const EventPage = () => {
                 <div className="topic">{item.time}</div>
                 <div className="des">{item.desc}</div>
                 <div className="buttons">
-                  <button>RULE BOOK</button>
+                  <button
+                    onClick={() => {
+                      window.open('https://drive.google.com/file/d/1VK5V6rhU-OeCUCNTKxSBYYTkvIeWWL8g/view', "_blank");
+                    }}
+                  >
+                    RULE BOOK
+                  </button>
                   <button
                     onClick={() => {
                       window.open(item.reg_link, "_blank");

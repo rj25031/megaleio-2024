@@ -44,6 +44,11 @@ const Footer = () => {
                       <FaPhone /> Deep Patil &nbsp;&nbsp; 9765392092
                     </a>
                   </li>
+                  <li className="footer-phone-number">
+                    <a href="tel:+918928801668" className="footer-link">
+                      <FaPhone /> Priyal Bari &nbsp;&nbsp; 8928801668
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li className="footer-item">

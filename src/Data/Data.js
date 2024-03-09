@@ -46,6 +46,7 @@ import darkest from "../images/Assets/clouds/darkest.webp";
 import poster from "../images/Assets/final.webp";
 import internshala from "../images/Internshala.png";
 import vector from "../images/vectoraca.jpg";
+import megalioLogo from "../images/megaleio png.png";
 
 export const clouds = {
   midDark: midDark,
@@ -59,6 +60,7 @@ export const clouds = {
 };
 
 export const images = [
+  megalioLogo,
   midDark,
   round,
   corner,
@@ -85,7 +87,7 @@ export const scheduleData = [
     day: 1,
     title: "Megahack",
     time: "10:30 A.M.(Both Days)",
-    place: "Auditorium",
+    place: "Quadrangle",
     img: i2,
   },
   {
@@ -132,7 +134,7 @@ export const scheduleData = [
     id: 8,
     day: 1,
     title: "Business Plan Presentation",
-    time: "1:30 A.M.",
+    time: "1:30 P.M.",
     place: "First Floor Computer Classroom",
     img: i8,
   },
@@ -174,7 +176,7 @@ export const scheduleData = [
     id: 13,
     day: 2,
     title: "Blind C",
-    time: "12:00 A.M.",
+    time: "12:00 P.M.",
     place: "Lab (A-Wing, IT Dept.)",
     img: i13,
   },

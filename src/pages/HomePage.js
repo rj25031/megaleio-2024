@@ -224,8 +224,6 @@ function HomePage() {
 		<div className='divider-child '><img src={img} alt="" /></div>
 	  </div>
       <Sponsor></Sponsor>
-	 
-
     </Layout>
   );
 }

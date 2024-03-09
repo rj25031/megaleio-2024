@@ -121,7 +121,6 @@ header a{
     height: 220px;
     flex-shrink: 0;
     position: relative;
-    
 }
 .thumbnail .item:nth-child(1){
     border-radius: 20px;
@@ -141,7 +140,6 @@ header a{
     left: -10px;
     right: 10px;
 	text-align: left;
-
 }
 .thumbnail .item .content .title{
     font-weight: 500;
@@ -354,16 +352,18 @@ header a{
   }
   .color-reddish{
 	color: #ae0001;
-  }
+}
+
 @media screen and (max-width: 678px) {
     .carousel .list .item .content{
         padding-right: 0;
     }
     .carousel .list .item .content .title{
-        font-size: 3em;
+		text-align: center;
+        font-size: 2.5em;
     }
 	.carousel .list .item .topic{
-		font-size: 2em;
+		font-size: 1.8em;
 		font-weight: bold;
 		line-height: 1.3em;
 	}
@@ -385,6 +385,87 @@ header a{
 	}
 	.thumbnail{
 		bottom: 80px;
+	}
+	.carousel.next .list .item:nth-child(1) img{
+		width: 150px;
+		height: 220px;
+		position: absolute;
+		bottom: 80px;
+		left: 50%;
+		border-radius: 30px;
+		animation: showImage .5s linear 1 forwards;
+	}
+	@keyframes outFrame{
+		to{
+			width: 150px;
+			height: 220px;
+			bottom: 80px;
+			left: 50%;
+			border-radius: 20px;
+		}
+	} 
+
+}
+@media screen and (max-height: 678px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .title{
+		text-align: center;
+        font-size: 2.2em;
+    }
+	.carousel .list .item .topic{
+		font-size: 1.3em;
+		font-weight: bold;
+		line-height: 1.3em;
+	}
+	.carousel .list .item .content{
+		top: 15%;
+		left: 50%;
+		width: 80%;
+		padding: 3%;
+	}
+	.event-lst{
+		font-size: 1.3rem;
+		left: 68%;
+		top: 45%;
+	}
+	.list-container{
+		padding: 25px;
+		font-size: 0.7rem;
+		width: 9rem;
+	}
+	.thumbnail{
+		bottom: 10px;
+	}
+	.thumbnail .item{
+		width: 100px;
+		height: 150px;
+	}
+	.thumbnail{
+		gap: 15px;
+	}
+	.thumbnail .item .content{
+		font-size: 10px;
+		text-align: left;
+	}
+	.carousel.next .list .item:nth-child(1) img{
+		width: 100px;
+		height: 150px;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		border-radius: 30px;
+		animation: showImage .5s linear 1 forwards;
+	}
+	@keyframes outFrame{
+		to{
+			width: 100px;
+			height: 150px;
+			bottom: 10px;
+			left: 50%;
+			border-radius: 20px;
+		}
 	}
 
 }

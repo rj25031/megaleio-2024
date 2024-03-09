@@ -118,7 +118,7 @@ function Schedule() {
                 (tl, index) =>
                   tl.day === 2 && (
                     <li
-                      key={index}
+                      key={index} 
                       onClick={() => handleListItemClick(index)}
                       className={
                         current === index + 1
@@ -151,7 +151,7 @@ function Schedule() {
                 <p data-aos="fade-up" className="text-5xl sm:text-3xl mb-3">
                   DAY : {tl.day}
                 </p>
-                <h1 data-aos="fade-up" className="text-9xl sm:text-5xl mb-3">
+                <h1 data-aos="fade-up" className="text-8xl sm:text-5xl mb-3">
                   {tl.title.toUpperCase()}
                 </h1>
                 <h1 data-aos="fade-up" className="text-4xl sm:text-3xl mb-3">

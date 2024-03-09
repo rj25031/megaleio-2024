@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Layout from "../Components/Layouts/Layout";
 import "../css/about.css";
 import { about_data } from "../Data/Data";
-import megalio2023 from "../images/Assets/megaleio2023.jpg";
+import megalio2023 from "../images/megaleio2023.webp";
 
 function About() {
   useEffect(() => {
@@ -75,7 +75,7 @@ function About() {
 
             <div className="frame"></div>
             <div className="frame"></div>
-
+ 
             <div className="frame">
               <div className="frame__content">
                 <h2>Megaleio 2024</h2>
