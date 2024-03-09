@@ -33,8 +33,8 @@ const Header = () => {
   const nav_list =
     'mx-5 xl:mx-0 py-2 text-xl nabar  xs:text-md px-5 hover:bg-yellow-500 hover:rounded-2xl opacity-0 text-white transition-all duration-500 hover:cursor-pointer'
   return (
-    <div ref={container} className="fixed header w-full top-0 ">
-      <div  className="flex  justify-between items-center sm:px-3 px-8 lg:px-10 p-2 bg-transparent">
+    <div ref={container} className="fixed backdrop-blur-sm header w-full top-0 ">
+      <div  className="flex  justify-between items-center sm:px-3 px-8 lg:px-10 p-2 ">
         <Link to="/">
           <div className="flex items-center">
             <img
@@ -70,7 +70,7 @@ const Header = () => {
             </Link>
           </ul>
         </div>
-        <div className="text-orange-600 text-3xl xs:text-2xl transition-all duration-500 hover:cursor-pointer hidden xl:block">
+        <div className="color-reddish text-3xl xs:text-2xl transition-all duration-500 hover:cursor-pointer hidden xl:block">
           {!isOpen && (
             <div onClick={buttonClickHandler}>
               <AiOutlineMenu />
@@ -84,7 +84,7 @@ const Header = () => {
         </div>
       </div>
       {isOpen && (
-        <div className=" bg-black lg:px-0 transition-all duration-500 hover:cursor-pointer ">
+        <div className="backdrop-blur-sm lg:px-0 transition-all duration-500 hover:cursor-pointer ">
           <ul>
             <Link to="/">
               <li className={nav_list_mob}>Home</li>

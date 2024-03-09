@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from 'react-router-dom'
 import "../css/home.css";
 import Layout from "../Components/Layouts/Layout";
 import {clouds  } from '../Data/Data';
@@ -7,10 +8,9 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Sponsor  from "../Components/Sponsor";
 import Countdown from "../Components/Countdown";
-import img from "../images/Assets/torn-page.png"
-// import Content from "../Components/Content";
-// import ImgText from "../Components/ImgText";
-// import Content from "../Components/content2"
+import img from "../images/horizons_train.png";
+import img1 from "../images/horizons_village.png";
+
 function HomePage() {
   const cloudContainer = useRef(null);
  
@@ -21,12 +21,14 @@ function HomePage() {
         trigger: cloudContainer.current,
         pin: true,
         pinSpacer: false,
-        start: "left left", // Adjusted syntax
+        start: "left left", 
         end: "+=2500",
         scrub: 1,
       },
     });
-
+    timeline.set(".logo-img",{
+      scale:0.7,
+    })
     timeline.to(
       ".corner-cloud-right",
       {
@@ -133,7 +135,7 @@ function HomePage() {
         className="main-section w-screen h-screen bg-black"
       >
         <div className="img-hero absolute top-0 left-96 z-0 sm:left-0">
-          <h1 className="sm:text-8xl text-yellow-500 harry absolute text-8xl w-screen font-bold text-center top-52 right-1 sm:left-0">
+          <h1 className="sm:text-8xl text-yellow-500 harry absolute text-8xl w-screen font-bold text-center sm:top-52 top-80 right-0 sm:left-0">
             Save the Date : March 22nd-23rd, 2024{" "}
           </h1>
           <img
@@ -201,11 +203,7 @@ function HomePage() {
           />
         </div>
       </section>
-      {/* <section className="w-screen h-screen text-black">
-        <div className="h">
-        <h1>hello</h1>
-        </div>
-      </section> */}
+     
       <section className="poster-section">
         <div className="poster">
           <div className="poster-img">
@@ -214,26 +212,19 @@ function HomePage() {
           <div className="content">
             <h1 className="text-3xl font-bold mb-4 color-maroon">MEGALEIO 2024</h1>
          <p className="text-xl color-reddish"> Welcome to Megaleio: A National Level Intercollegiate Technical Event where innovation meets excellence! Megaleio brings together the brightest minds from across the country to showcase their skills, knowledge, and creativity. With a plethora of competitions, Megaleio offers a platform for students to explore the latest trends in technology, engage in meaningful discussions, and network with industry experts. Join us on this exciting journey of learning, collaboration, and fun as we celebrate the spirit of innovation and technical prowess at Megaleio!"</p>
+         <button className="btn-veve">  <Link to="/events">Register Now !!!</Link></button>
           </div>
-		<div className="relative z-50 h-16">
-			<img src="./../images/poster-bg.png" loading="eager" alt="" />
-		</div>
         </div>
       </section>
-	  <div className='divider-parent'>
-		<div className='divider-child'><img src={img} alt="" /></div>
+      <div className='divider-parent'>
+		<div className='divider-child '><img src={img1} alt="" /></div>
 	  </div>
-	  {/* <Content></Content>  */}
-      {/* <ImgText></ImgText> */}
       <Countdown></Countdown>
 	  <div className='divider-parent'>
-		<div className='divider-child'><img src={img} alt="" /></div>
+		<div className='divider-child '><img src={img} alt="" /></div>
 	  </div>
       <Sponsor></Sponsor>
-	  <div className='divider-parent'>
-		<div className='divider-child'><img src={img} alt="" /></div>
-	  </div>
-      {/* <Content></Content> */}
+	 
 
     </Layout>
   );

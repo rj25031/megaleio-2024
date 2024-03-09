@@ -70,7 +70,7 @@ function About() {
                   // muted
                   alt="photodd"
                 ></img>
-              </div>
+              </div> 
             </div>
 
             <div className="frame"></div>

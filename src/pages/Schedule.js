@@ -87,7 +87,7 @@ function Schedule() {
       {
         <div className="timeline-container relative" ref={container}>
           <div
-            className="centering fixed p-3 pr-10 rounded-r-3xl text-white font-bold top-32 z-50 blur-background"
+            className="centering fixed p-3 pr-10 rounded-r-3xl text-white font-bold top-44 z-50 blur-background"
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
           >
@@ -98,7 +98,7 @@ function Schedule() {
                 (tl, index) =>
                   tl.day === 1 && (
                     <li
-                      key={index}
+                      key={index} 
                       onClick={() => handleListItemClick(index)}
                       className={
                         current === index + 1
@@ -106,7 +106,7 @@ function Schedule() {
                           : "m-0 cursor-pointer h-6 sm:h-4 animated-paragraph "
                       }
                     >
-                      <p className="mt-1">{tl.time}</p>
+                      <p className="mt-1">{tl.time.replace('(Both Days)','')}</p>
                     </li>
                   )
               )}

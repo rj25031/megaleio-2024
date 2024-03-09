@@ -115,10 +115,10 @@ const EventPage = () => {
     console.log(currentIndex);
   };
   
-  return (
+  return ( 
     <Layout>
       <div ref={container} className="carousel">
-        <ol className=" list-container list-decimal w-64 absolute z-50 top-52 sm:top-64 left-0"
+        <ol className=" list-container list-decimal w-64 absolute z-50 top-44 left-0"
         onMouseEnter={handleHoverIn}
         onMouseLeave={handleHoverOut}
         >
@@ -126,7 +126,7 @@ const EventPage = () => {
             <li
               key={index}
               onClick={() => handleEventClick(index)}
-              className={ index === selectedEvent ? "selected" : ""}
+              className={ index === selectedEvent ? "selected mb-2" : "mb-2"}
             >
               {event.title}
             </li>

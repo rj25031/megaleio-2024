@@ -1,10 +1,7 @@
 import React from 'react';
 import '../css/sponsor.css';
-import { sponsors } from '../Data/Data';
-import { platform } from '../Data/Data';
-import { co_powered } from '../Data/Data';
-import { refreshment } from '../Data/Data';
-import { powered_by } from '../Data/Data';
+import { sponsors,powered_by,co_powered } from '../Data/Data';
+
 
 
 const Sponsor = ({ image, title }) => {
@@ -41,7 +38,7 @@ const Sponsors = () => {
 		</ul>
 
 		<h2 className="sponsors-sub-heading">Co-Powered By</h2>
-		<ul className="sponsors-list">
+		<ul className="sponsors-list co-power">
 		{co_powered.map((co_powered, index) => (
 		<li key={index} className="sponsors-item">
 			<Sponsor image={co_powered.img} title={co_powered.title} />
@@ -49,7 +46,7 @@ const Sponsors = () => {
 		))}
 		<li className='sponsors-item'>
 			<div className='sponsor-title'>
-				JJ Trders
+				JJ Traders
 			</div>
 		</li>
 		<li className='sponsors-item'>
