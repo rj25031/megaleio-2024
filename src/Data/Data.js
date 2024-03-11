@@ -148,6 +148,14 @@ export const scheduleData = [
   },
   {
     id: 10,
+    day: 1,
+    title: "Tech Quiz",
+    time: "2:00 P.M.",
+    place: "Third Floor, A23 IT Dept.",
+  img: i15,
+  },
+  {
+    id: 11,
     day: 2,
     title: "Civil Junkyard",
     time: "9:30 A.M.",
@@ -156,7 +164,7 @@ export const scheduleData = [
   },
 
   {
-    id: 11,
+    id: 12,
     day: 2,
     title: "Robomaze",
     time: "10:30 A.M.",
@@ -164,7 +172,7 @@ export const scheduleData = [
     img: i11,
   },
   {
-    id: 12,
+    id: 13,
     day: 2,
     title: "Robosoccer",
     time: "10:30 A.M.",
@@ -173,7 +181,7 @@ export const scheduleData = [
   },
  
   {
-    id: 13,
+    id: 14,
     day: 2,
     title: "Blind C",
     time: "12:00 P.M.",
@@ -181,20 +189,12 @@ export const scheduleData = [
     img: i13,
   },
   {
-    id: 14,
+    id: 15,
     day: 2,
     title: "Robowar",
     time: "12:30 P.M.",
     place: "Quadrangle",
     img: i14,
-  },
-  {
-    id: 15,
-    day: 2,
-    title: "Tech Quiz",
-    time: "1:30 P.M.",
-    place: "Third Floor, A23 IT Dept.",
-	img: i15,
   },
 ];
 
@@ -322,7 +322,7 @@ export const event_list = [
     id: 11,
     image: quiz,
     title: "TECH QUIZ",
-    time: "At 01:30 PM (DAY 2)",
+    time: "At 02:00 PM (DAY 1)",
     venue: "Auditorium",
     reg_cost: "Rs.100 Per Team",
     prize_pool: "5000",
