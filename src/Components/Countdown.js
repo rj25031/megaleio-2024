@@ -13,7 +13,7 @@ const TimerPage = () => {
   }, []);
 
   function calculateTimeRemaining() {
-    const targetTime = new Date("March 22, 2024 10:00:00").getTime();
+    const targetTime = new Date("March 22, 2025 10:00:00").getTime();
     const currentTime = new Date().getTime();
     const remainingMilliseconds = targetTime - currentTime;
 
